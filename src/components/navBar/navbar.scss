@@ -1,0 +1,38 @@
+.header{
+    background-color: white;
+    }
+
+.headerContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px
+    }
+
+.headerLogo{
+    padding: 10px;
+    width: 250px;
+}
+.headerLogo:hover{
+    transform: scale(1.2);
+}
+
+.headerItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding-right: 55px;
+}
+
+.headerItem{
+        text-decoration: none;
+        color: black;
+}
+.headerItem:hover{
+    transform: scale(1.15);
+    color: red;
+}
+
+
+

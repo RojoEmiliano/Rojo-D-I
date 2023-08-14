@@ -28,12 +28,12 @@
 
 .comunicacion{
     display: flex;
-    justify-content:left;
+    justify-content:flex-start;
     align-items: center;
     flex-direction: column;
     a{
         text-decoration: none;
-        align-items: center;    }
+    }
 }
 
 .icono{
@@ -52,4 +52,9 @@
 .copy{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    p{
+        padding: 10px;
+        
+    }
 }

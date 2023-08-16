@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const SliderComponent = ({ slides }) => {
+const SliderComponent = ({ slides, resY, resX }) => {
   // const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
 
@@ -36,20 +36,21 @@ const SliderComponent = ({ slides }) => {
     <div className='w-full relative'>
       <Slider ref={sliderRef} {...settings}>
         {slides.map(slide => {
-          return <img src={slide} alt='impresora' />;
+
+          return <img key={slide} src={slide} alt='impresora' />;
         })}
       </Slider>
       <button
         onClick={() => sliderRef.current.slickPrev()}
         className='absolute left-2 top-[50%] z-10'
       >
-        <FontAwesomeIcon size='xl' icon={faArrowLeft} />
+        <FontAwesomeIcon className='hover:text-rojo transition-all' size='xl' icon={faArrowLeft} />
       </button>
       <button
         onClick={() => sliderRef.current.slickNext()}
         className='absolute right-2 top-[50%] z-10'
       >
-        <FontAwesomeIcon size='xl' icon={faArrowRight} />
+        <FontAwesomeIcon className='hover:text-rojo transition-all' size='xl' icon={faArrowRight} />
       </button>
     </div>
     // <div className='w-full h-full relative'>

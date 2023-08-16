@@ -5,6 +5,7 @@ import Footer from './components/footer/footer';
 import NavBar from './components/navBar/navBar';
 import Epson from './pages/epson/epson';
 import './App.css';
+import Ricoh from './pages/ricoh';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path='/ricoh' element={<Ricoh/>}/>
         <Route path="/epson" element={<Epson />} />
       </Routes>
       <Footer />

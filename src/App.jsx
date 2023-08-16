@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './components/index';
 import Footer from './components/footer/footer';
 import NavBar from './components/navBar/navBar';
-import Epson from './components/epson/epson';
+import Epson from './pages/epson/epson';
 import './App.css';
 
 function App() {

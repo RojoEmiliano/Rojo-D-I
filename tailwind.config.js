@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         rojo: '#bf292f',
+        epson: '#039',
       },
     },
   },

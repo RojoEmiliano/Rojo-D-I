@@ -1,6 +1,6 @@
 import React from 'react'
 import { products } from '../assets/data/ricoh'; 
-import SliderComponent from '../components/slider';
+import SliderComponent from '../components/Slider/Slider';
 
 
 const Ricoh = () => {

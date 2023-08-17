@@ -11,7 +11,7 @@ const ArrowButton = ({ theme, orientation, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`arrowButton absolute top-[50%] z-10 border rounded-xl border-white transition-all p-2 ${classTheme} ${orientation}`}
+      className={`arrowButton absolute top-[50%] z-10 rounded-xl transition-all p-2 ${classTheme} ${orientation}`}
     >
       <FontAwesomeIcon
         className={`arrow hover:text-white transition-all`}

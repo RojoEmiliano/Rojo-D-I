@@ -1,8 +1,7 @@
 import React from 'react'
 import { products } from '../assets/data/ricoh'; 
-import SliderComponent from '../components/slider';
 import { Link } from 'react-router-dom';
-
+import SliderComponent from '../components/Slider/Slider';
 
 const Ricoh = () => {
 

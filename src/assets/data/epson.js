@@ -54,10 +54,10 @@ export const products = [
       'Doble Faz automático',
     ],
     imgs: [
-      '/epson/img/WF-M5299/wf-m5299_desk-office_690x460.jpg',
-      '/epson/img/WF-M5299/wf-m5299_hero-optional-tray_690x460.jpg',
       '/epson/img/WF-M5299/wf-m5299_hero-paper_690x460.jpg',
+      '/epson/img/WF-M5299/wf-m5299_hero-optional-tray_690x460.jpg',
       '/epson/img/WF-M5299/wf-m5299_left-tray-open_690x460.jpg',
+      '/epson/img/WF-M5299/wf-m5299_desk-office_690x460.jpg',
     ],
     specs: {
       print: {
@@ -190,11 +190,11 @@ export const products = [
       'Doble Faz automático',
     ],
     imgs: [
-      '/epson/img/WF-M5799/wf-m5799_desk-office_690x460.jpg',
-      '/epson/img/WF-M5799/wf-m5799_hero-paper_690x460.jpg',
-      '/epson/img/WF-M5799/wf-m5799_multiple-trays-open_690x460.jpg',
       '/epson/img/WF-M5799/wf-m5799_optional-tray_690x460.jpg',
+      '/epson/img/WF-M5799/wf-m5799_hero-paper_690x460.jpg',
       '/epson/img/WF-M5799/wf-m5799_right-paper-lid-open_690x460.jpg',
+      '/epson/img/WF-M5799/wf-m5799_multiple-trays-open_690x460.jpg',
+      '/epson/img/WF-M5799/wf-m5799_desk-office_690x460.jpg',
     ],
     specs: {
       print: {
@@ -364,10 +364,10 @@ export const products = [
     ],
     imgs: [
       '/epson/img/WF-C5790/WF-C5790_HO_1.jpg',
-      '/epson/img/WF-C5790/WF-C5790_LIFESTYLE.jpg',
       '/epson/img/WF-C5790/WF-C5790_LT_ANG_3.jpg',
       '/epson/img/WF-C5790/WF-C5790_OTHER_ANG_3.jpg',
       '/epson/img/WF-C5790/WF-C5790_OTHER_ANG_5.jpg',
+      '/epson/img/WF-C5790/WF-C5790_LIFESTYLE.jpg',
     ],
     specs: {
       print: {
@@ -478,9 +478,9 @@ export const products = [
       'Doble Faz automático',
     ],
     imgs: [
-      '/epson/img/WF-C878R/WF-C878R_headon-with-stand_690x460.jpg',
       '/epson/img/WF-C878R/WF-C878R_headon_690x460.jpg',
       '/epson/img/WF-C878R/WF-C878R_right-lid-opened_690x460.jpg',
+      '/epson/img/WF-C878R/WF-C878R_headon-with-stand_690x460.jpg',
       '/epson/img/WF-C878R/WF-C878R_right-with-stand_690x460.jpg',
     ],
     specs: {

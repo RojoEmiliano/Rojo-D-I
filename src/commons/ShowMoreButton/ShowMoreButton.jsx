@@ -1,16 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-const ShowMoreButton = ({ theme, onClick }) => {
+import { themes } from '../../utils/themes';
+
+const ShowMoreButton = ({ theme, modelCode }) => {
   return (
-    <button
-      type='button'
-      onClick={onClick}
+    <Link
+      to={`/epson/detail/${modelCode}`}
       className={`vermas flex justify-end items-center px-4 text-white font-regular absolute rounded-md w-[40%] h-8 ${
-        theme === 'epson'
+        theme === themes.epson
           ? 'bg-epson hover:bg-epson/[.8]'
-          : theme === 'ricoh'
+          : theme === themes.ricoh
           ? 'bg-rojo hover:bg-rojo/[.8]'
           : ''
       }`}
@@ -19,7 +21,7 @@ const ShowMoreButton = ({ theme, onClick }) => {
         <span>Ver Más</span>
         <FontAwesomeIcon icon={faCaretRight} />
       </div>
-    </button>
+    </Link>
   );
 };
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 import './arrowButton.scss';
+import { themes } from '../../utils/themes';
 
 const ArrowButton = ({ theme, orientation, onClick }) => {
   const classTheme = `${
-    theme === 'epson' ? 'hover:bg-epson' : theme === 'ricoh' ? 'hover:bg-rojo' : ''
+    theme === themes.epson ? 'hover:bg-epson' : theme === themes.ricoh ? 'hover:bg-rojo' : ''
   }`;
 
   return (

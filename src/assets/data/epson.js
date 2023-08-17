@@ -1,4 +1,4 @@
-export const products = [
+const products = [
   {
     name: 'Impresora Epson EcoTank M1180',
     description: [
@@ -526,3 +526,5 @@ export const products = [
     },
   },
 ];
+
+export default products;

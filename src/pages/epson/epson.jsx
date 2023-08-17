@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { products } from '../../assets/data/epson';
+import products from '../../assets/data/epson';
 import SliderComponent from '../../components/Slider/Slider';
 import './epson.scss';
 import ShowMoreButton from '../../commons/ShowMoreButton/ShowMoreButton';
@@ -21,7 +21,7 @@ const Epson = () => {
             <div className='w-full text-center bg-white px-4'>
               <h2 className='font-medium text-xl'>{product.name}</h2>
             </div>
-            <ShowMoreButton theme={themes.epson} />
+            <ShowMoreButton theme={themes.epson} modelCode={product.specs.modelCode} />
             <div className='h-[60px]'></div>
           </div>
         ))}

@@ -21,7 +21,7 @@ const Epson = () => {
             <div className='w-full text-center bg-white px-4'>
               <h2 className='font-medium text-xl'>{product.name}</h2>
             </div>
-            <ShowMoreButton theme={themes.epson} modelCode={product.specs.modelCode} />
+            <ShowMoreButton theme={themes.epson} brand="epson" modelCode={product.specs.modelCode} />
             <div className='h-[60px]'></div>
           </div>
         ))}

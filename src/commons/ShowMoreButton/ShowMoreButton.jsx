@@ -5,10 +5,10 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 import { themes } from '../../utils/themes';
 
-const ShowMoreButton = ({ theme, modelCode }) => {
+const ShowMoreButton = ({ theme, modelCode, brand }) => {
   return (
     <Link
-      to={`/epson/detail/${modelCode}`}
+      to={`/${brand}/detail/${modelCode}`}
       className={`vermas flex justify-end items-center px-4 text-white font-regular absolute rounded-md w-[40%] h-8 ${
         theme === themes.epson
           ? 'bg-epson hover:bg-epson/[.8]'

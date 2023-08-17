@@ -12,8 +12,8 @@ export const products = [
         ],
         
         imgs: [
-            '/ricoh/img/sp3710/3710.jpg',
             '/ricoh/img/sp3710/3710-2.jpg',
+            '/ricoh/img/sp3710/3710.jpg',
             '/ricoh/img/sp3710/3710-3.jpg',
             '/ricoh/img/sp3710/3710-4.jpg',
         ],
@@ -40,7 +40,7 @@ export const products = [
             paperOutCapacity: '50 hojas',
         },
         modelCode: '408272',
-        dataSheet: '',
+        dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
     },
 
     {
@@ -53,10 +53,10 @@ export const products = [
         ],
         
         imgs: [
+            '/ricoh/img/p311-m320/311-4.jpg',
             '/ricoh/img/p311-m320/311.jpg',
             '/ricoh/img/p311-m320/311-2.jpg',
             '/ricoh/img/p311-m320/311-3.jpg',
-            '/ricoh/img/p311-m320/311-4.jpg',
         ],
 
         specs:{
@@ -81,7 +81,7 @@ export const products = [
             paperOutCapacity: '50 hojas',
         },
         modelCode: '408525T',
-        dataSheet: '',
+        dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
     },
 
     
@@ -123,7 +123,7 @@ export const products = [
             paperOutCapacity: '250 hojas',
         },
         modelCode: '418495',
-        dataSheet: '',
+        dataSheet: '/ricoh/dataSheet/dataSheet-502.pdf',
     },
 
     {
@@ -137,9 +137,9 @@ export const products = [
         
         imgs: [
             '/ricoh/img/p800/800.jpg',
-            '/ricoh/img/p800/800-2.jpg',
-            '/ricoh/img/p800/800-3.jpg',
             '/ricoh/img/p800/800-4.jpg',
+            '/ricoh/img/p800/800-3.jpg',
+            '/ricoh/img/p800/800-2.jpg',
         ],
 
         specs:{
@@ -164,7 +164,7 @@ export const products = [
             paperOutCapacity: '500 hojas',
         },
         modelCode: '418460',
-        dataSheet: '',
+        dataSheet: '/ricoh/dataSheet/dataSheet-800.pdf',
     },
 
     //MULTIFUNCIONES BYN
@@ -179,10 +179,10 @@ export const products = [
         ],
         
         imgs: [
-            '/ricoh/img/sp3710/3710sf.jpg',
-            '/ricoh/img/sp3710/3710sf-2.jpg',
-            '/ricoh/img/sp3710/3710sf-3.jpg',
-            '/ricoh/img/sp3710/3710sf-4.jpg',
+            'ricoh/img/sp3710/3710sf.jpg',
+            'ricoh/img/sp3710/3710sf-2.jpg',
+            'ricoh/img/sp3710/3710sf-3.jpg',
+            'ricoh/img/sp3710/3710sf-4.jpg',
         ],
 
         specs:{
@@ -207,7 +207,7 @@ export const products = [
             paperOutCapacity: '50 hojas',
         },
         modelCode: '408266',
-        dataSheet: 'https://www.ricoh-americalatina.com/files/18926/sp3710sf_ES_LA.pdf',
+        dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
     },
 
     {
@@ -248,7 +248,7 @@ export const products = [
             paperOutCapacity: '50 hojas',
         },
         modelCode: '408534T',
-        dataSheet: 'https://www.ricoh-americalatina.com/files/18917/M_320F_P_311_Brochure_Es_La.pdf',
+        dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
     },
 
     {
@@ -289,7 +289,7 @@ export const products = [
             paperOutCapacity: '250 hojas',
         },
         modelCode: '408534T',
-        dataSheet: 'https://www.ricohleon.com.mx/equipos-ricoh/aficio-mp-301-spf/aficiomp301spf.pdf',
+        dataSheet: '/ricoh/dataSheet/dataSheet-301.pdf',
     },
 
     {
@@ -302,10 +302,10 @@ export const products = [
         ],
         
         imgs: [
+            '/ricoh/img/mp305/305-4.jpg',
             '/ricoh/img/mp305/305.jpg',
             '/ricoh/img/mp305/305-2.jpg',
             '/ricoh/img/mp305/305-3.jpg',
-            '/ricoh/img/mp305/305-4.jpg',
         ],
 
         specs:{
@@ -330,7 +330,7 @@ export const products = [
             paperOutCapacity: '250 hojas',
         },
         modelCode: '417436',
-        dataSheet: 'https://copiadorasenventa.com/wp-content/uploads/brochure-espa%C3%B1ol/Ricoh-MP-305SPF-Folleto.pdf',
+        dataSheet: '/ricoh/dataSheet/dataSheet-305.pdf',
     },
 
     {
@@ -371,7 +371,7 @@ export const products = [
             paperOutCapacity: '250 hojas',
         },
         modelCode: '418491',
-        dataSheet: '',
+        dataSheet: '/ricoh/dataSheet/dataSheet-430.pdf',
     },
 
     {
@@ -412,7 +412,7 @@ export const products = [
             paperOutCapacity: '500 hojas',
         },
         modelCode: '418460',
-        dataSheet: '',
+        dataSheet: '/ricoh/dataSheet/dataSheet-550.pdf',
     },
 
     {
@@ -425,9 +425,9 @@ export const products = [
         ],
         
         imgs: [
-            '/ricoh/img/a2352-3352/2352.jpg',
-            '/ricoh/img/a2352-3352/2352-2.jpg',
-            '/ricoh/img/a2352-3352/2352-3.jpg',
+            'ricoh/img/a2352-3352/2352.jpg',
+            'ricoh/img/a2352-3352/2352-2.jpg',
+            'ricoh/img/a2352-3352/2352-3.jpg',
         ],
 
         specs:{
@@ -451,8 +451,8 @@ export const products = [
             paperEntryCapacity: 'Máximo 3.150 hojas.',
             paperOutCapacity: 'Máximo 1.650 hojas',
         },
-        modelCode: '',
-        dataSheet: '',
+        modelCode: 'MP2352',
+        dataSheet: '/ricoh/dataSheet/dataSheet-2352.pdf',
     },
 
     {
@@ -465,9 +465,9 @@ export const products = [
         ],
         
         imgs: [
-            '/ricoh/img/a2352-3352/2352.jpg',
-            '/ricoh/img/a2352-3352/2352-2.jpg',
-            '/ricoh/img/a2352-3352/2352-3.jpg',
+            'ricoh/img/a2352-3352/2352.jpg',
+            'ricoh/img/a2352-3352/2352-2.jpg',
+            'ricoh/img/a2352-3352/2352-3.jpg',
         ],
 
         specs:{
@@ -491,8 +491,8 @@ export const products = [
             paperEntryCapacity: 'Máximo 3.150 hojas.',
             paperOutCapacity: 'Máximo 1.650 hojas',
         },
-        modelCode: '',
-        dataSheet: '',
+        modelCode: 'MP3352',
+        dataSheet: '/ricoh/dataSheet/dataSheet-2352.pdf',
     },
 
     {
@@ -505,7 +505,7 @@ export const products = [
         ],
 
         imgs: [
-            '/ricoh/img/mp2555/2555.jpg',
+            'ricoh/img/mp2555/2555.jpg',
         ],
         
         specs:{
@@ -529,8 +529,8 @@ export const products = [
             paperEntryCapacity: '1,200 hojas (550 hojas x 2 bandejas y Bandeja Bypass de 100 hojas). Maximo 4.700 hojas',
             paperOutCapacity: 'Standar: 500 hojas. Máximo: 1.625 hojas',
         },
-        modelCode: '',
-        dataSheet: '',
+        modelCode: 'MP2555',
+        dataSheet: '/ricoh/dataSheet/dataSheet-2555.pdf',
     },
 
     {
@@ -570,8 +570,8 @@ export const products = [
             paperEntryCapacity: '1,200 hojas (550 hojas x 2 bandejas y Bandeja Bypass de 100 hojas). Maximo 4.700 hojas',
             paperOutCapacity: 'Standar: 500 hojas. Máximo: 1.625 hojas',
         },
-        modelCode: '',
-        dataSheet: '',
+        modelCode: 'MP2554',
+        dataSheet: '/ricoh/dataSheet/dataSheet-2554.pdf',
     },
     
     //MULTIFUNCIONES COLOR
@@ -586,7 +586,7 @@ export const products = [
         ],
 
         imgs: [
-            '/ricoh/img/mpc305/c305.jpg',
+            'ricoh/img/mpc305/c305.jpg',
         ],
         
         specs:{
@@ -610,8 +610,8 @@ export const products = [
             paperEntryCapacity: 'Bandeja de 250 hojas y bandeja bypass 100 hojas. Maximo 1.350 hojas',
             paperOutCapacity: '100 hojas',
         },
-        modelCode: '',
-        dataSheet: '',
+        modelCode: 'MPC305',
+        dataSheet: '/ricoh/dataSheet/dataSheet-c305.pdf',
     },
 
     {
@@ -625,9 +625,8 @@ export const products = [
 
         imgs: [
             '/ricoh/img/mpc306/306.jpg',
-            '/ricoh/img/mpc306/306-2.jpg',
             '/ricoh/img/mpc306/306-3.jpg',
-            '/ricoh/img/mpc306/306-4.jpg',
+            '/ricoh/img/mpc306/306-2.jpg',
         ],
         
         specs:{
@@ -651,8 +650,8 @@ export const products = [
             paperEntryCapacity: 'Bandeja de 250 hojas y bandeja bypass 100 hojas. Maximo 1.350 hojas',
             paperOutCapacity: '100 hojas',
         },
-        modelCode: '',
-        dataSheet: '',
+        modelCode: 'MPC306',
+        dataSheet: '/ricoh/dataSheet/dataSheet-c306.pdf',
     },
 
 ]

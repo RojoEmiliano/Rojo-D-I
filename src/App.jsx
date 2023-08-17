@@ -6,6 +6,7 @@ import NavBar from './components/navBar/navBar';
 import Epson from './pages/epson/epson';
 import './App.css';
 import Ricoh from './pages/ricoh';
+import ItemDetail from './components/navBar/ItemDetail/ItemDetail';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path='/ricoh' element={<Ricoh/>}/>
         <Route path="/epson" element={<Epson />} />
+        <Route path="/ricoh/detail/:modelCode" element={<ItemDetail/>}/>
       </Routes>
       <Footer />
     </div>

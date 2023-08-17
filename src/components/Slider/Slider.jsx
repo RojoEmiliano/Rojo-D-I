@@ -29,7 +29,7 @@ const SliderComponent = ({ slides, theme }) => {
         })}
       </Slider>
       <ArrowButton onClick={() => sliderRef.current.slickPrev()} theme={theme} orientation='left-2' />
-      <ArrowButton onClick={() => sliderRef.current.slickPrev()} theme={theme} orientation='right-2' />
+      <ArrowButton onClick={() => sliderRef.current.slickNext()} theme={theme} orientation='right-2' />
     </div>
   );
 };

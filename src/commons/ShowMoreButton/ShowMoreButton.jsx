@@ -11,9 +11,9 @@ const ShowMoreButton = ({ theme, modelCode, brand }) => {
       to={`/${brand}/detail/${modelCode}`}
       className={`vermas flex justify-end items-center px-4 text-white font-regular absolute rounded-md w-[40%] h-8 ${
         theme === themes.epson
-          ? 'bg-epson hover:bg-epson/[.8]'
+          ? 'bg-epson hover:bg-epsonHover'
           : theme === themes.ricoh
-          ? 'bg-rojo hover:bg-rojo/[.8]'
+          ? 'bg-rojo hover:bg-rojoHover'
           : ''
       }`}
     >

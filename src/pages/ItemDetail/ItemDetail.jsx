@@ -165,12 +165,12 @@ const ItemDetail = () => {
           <div className="flex justify-between items-center ">
             <button
               className={`${
-                theme === "ricoh"
-                  ? "bg-rojo hover:bg-rojo/[0.9] "
-                  : theme === "epson"
-                  ? "bg-epson hover:bg-epson/[0.9]"
-                  : ""
-              } mt-4 px-4 py-2  text-white rounded-lg focus:outline-none`}
+                theme === 'ricoh'
+                  ? 'bg-rojo hover:bg-rojoHover'
+                  : theme === 'epson'
+                  ? 'bg-epson hover:bg-epsonHover'
+                  : ''
+              } mt-4 px-4 py-2  text-white rounded-lg  focus:outline-none`}
               onClick={handleVolver}
             >
               <FaArrowLeftLong />
@@ -178,10 +178,10 @@ const ItemDetail = () => {
             <a
               className={`${
                 theme === themes.ricoh
-                  ? "bg-rojo hover:bg-rojo/[0.9] "
+                  ? 'bg-rojo hover:bg-rojoHover'
                   : theme === themes.epson
-                  ? "bg-epson hover:bg-epson/[0.9]"
-                  : ""
+                  ? 'bg-epson hover:bg-epsonHover'
+                  : ''
               } mt-4 px-4 py-2  text-white rounded-lg  focus:outline-none`}
               target="_blank"
               href={item[0].specs.dataSheet}

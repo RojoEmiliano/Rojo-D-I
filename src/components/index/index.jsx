@@ -17,7 +17,7 @@ function Index() {
       <div className='indexTitle'>
         <h1 className='title'>NUESTRAS MARCAS</h1>
         <hr />
-        <p className='title'>EQUIPOS</p>
+        <p className='title'>EQU</p>
       </div>
       <div className='Container'>
         <div className='imgContainer'>

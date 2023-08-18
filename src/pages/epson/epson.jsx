@@ -9,6 +9,11 @@ import { themes } from '../../utils/themes';
 const Epson = () => {
   return (
     <div className='w-full border'>
+            <div className='flex items-center justify-center'>
+        <img
+          src='/epson/img/logo/epson.svg'
+          className='pt-10 max-w-[200px] max-h-[200px] flex justify-center items-center' />
+      </div>
       <div className='flex flex-wrap justify-evenly'>
         {products.map(product => (
           <div

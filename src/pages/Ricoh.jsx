@@ -11,7 +11,7 @@ function Ricoh() {
     <div className='w-full border'>
       <div className='flex items-center justify-center'>
         <img
-          src='/ricoh/img/banner/ricoh.png'
+          src='/ricoh/img/logo/ricoh.svg'
           className='pt-10 max-w-[200px] max-h-[200px] flex justify-center items-center' />
       </div>
       <div className='flex flex-wrap justify-evenly'>

@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        rojo: '#bf292f',
-        rojoHover: '#c53e44',
+        ricoh: '#bf292f',
+        ricohHover: '#c53e44',
         epson: '#039',
         epsonHover: '#1a47a3',
       },

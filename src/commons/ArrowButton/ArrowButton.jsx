@@ -3,17 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import './arrowButton.scss';
-import { themes } from '../../utils/themes';
 
 const ArrowButton = ({ theme, orientation, onClick }) => {
-  const classTheme = `${
-    theme === themes.epson ? 'hover:bg-epson' : theme === themes.ricoh ? 'hover:bg-rojo' : ''
-  }`;
 
   return (
     <button
       onClick={onClick}
-      className={`arrowButton absolute top-[50%] z-10 rounded-xl transition-all p-2 ${classTheme} ${orientation}`}
+      className={`arrowButton absolute top-[50%] z-10 rounded-xl transition-all p-2 hover:bg-${theme} ${orientation}`}
     >
       <FontAwesomeIcon
         className={`arrow hover:text-white transition-all`}

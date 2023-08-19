@@ -1,0 +1,24 @@
+.checkbox {
+  user-select: none;
+  input:checked ~ .checkmarkContainer {
+    // box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, 0.8);
+
+    .checkmark {
+      display: block;
+    }
+  }
+  .checkmarkContainer {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    .checkmark {
+      display: none;
+    }
+  }
+}
+.checkbox:hover {
+  .checkmarkContainer {
+    border-color: #1a47a3 !important;
+    box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+}

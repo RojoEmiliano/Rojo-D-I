@@ -1,3 +1,5 @@
+import { productsTypes } from '../../utils/productsTypes';
+
 const products = [
   {
     name: 'Impresora Epson EcoTank M1180',
@@ -14,6 +16,7 @@ const products = [
       '/epson/img/M-1180/M1180_690x460_3.jpg',
       '/epson/img/M-1180/M1180_690x460_6.jpg',
     ],
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Inyección de tinta PrecisionCore® monocromática optimizada',
@@ -59,6 +62,7 @@ const products = [
       '/epson/img/WF-M5299/wf-m5299_left-tray-open_690x460.jpg',
       '/epson/img/WF-M5299/wf-m5299_desk-office_690x460.jpg',
     ],
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Precision Core® monocromático (negro)',
@@ -105,6 +109,7 @@ const products = [
       '/epson/img/WF-6090/wf6090_prod05_left-multiple-trays-open_690x460.jpg',
       '/epson/img/WF-6090/wf6090_prod06_control-panel-display_690x460.jpg',
     ],
+    type: productsTypes.iColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -151,6 +156,7 @@ const products = [
       '/epson/img/WF-C5290/WF-C5290__690x460_4.jpg',
       '/epson/img/WF-C5290/WF-C5290__690x460_6.jpg',
     ],
+    type: productsTypes.iColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -196,6 +202,7 @@ const products = [
       '/epson/img/WF-M5799/wf-m5799_multiple-trays-open_690x460.jpg',
       '/epson/img/WF-M5799/wf-m5799_desk-office_690x460.jpg',
     ],
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'PrecisionCore® monocromático',
@@ -252,6 +259,7 @@ const products = [
       '/epson/img/L-6490/ecotank-l6490-690x460-1.jpg',
       '/epson/img/L-6490/ecotank-l6490-690x460-2.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'PrecisionCore® 4 colores (CMYK)',
@@ -310,6 +318,7 @@ const products = [
       '/epson/img/WF-6590/wf6590_prod06_closeup-paper_690x460.jpg',
       '/epson/img/WF-6590/wf6590_prod07_control-panel-display_690x460.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec:
@@ -369,6 +378,7 @@ const products = [
       '/epson/img/WF-C5790/WF-C5790_OTHER_ANG_5.jpg',
       '/epson/img/WF-C5790/WF-C5790_LIFESTYLE.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -427,6 +437,7 @@ const products = [
       '/epson/img/L-15150/L15150-690x460-4.jpg',
       '/epson/img/L-15150/L15150-690x460-6.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'PrecisionCore® 4 colores (CMYK) con cabezal fijo en línea',
@@ -483,6 +494,7 @@ const products = [
       '/epson/img/WF-C878R/WF-C878R_headon-with-stand_690x460.jpg',
       '/epson/img/WF-C878R/WF-C878R_right-with-stand_690x460.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',

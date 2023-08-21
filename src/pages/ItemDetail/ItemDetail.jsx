@@ -48,13 +48,28 @@ const ItemDetail = () => {
           </div>
           <div className='py-4 pl-[10%]'>
             <div className='text-3xl font-semibold mb-4'>{item[0].name}</div>
-            <ul className='list-disc list-inside'>
+            <ul className='list-disc list-inside '>
               {item[0].description.map((text, index) => (
                 <li key={index} className='mb-2'>
                   {text}
                 </li>
               ))}
             </ul>
+            <div className='m-[2%] '>
+            <a
+              className={`${
+                theme === themes.ricoh
+                  ? '  bg-gray-100  hover:bg-ricoh hover:duration-100 border-2 border-ricoh text-ricoh '
+                  : theme === themes.epson
+                  ? 'bg-gray-100 hover:bg-epson border-2 border-epson text-epson '
+                  : ''
+              } mt-4 px-4 py-2 hover:text-white   rounded-lg  focus:outline-none`}
+              target='_blank'
+              href='https://wa.link/xj5bzq'
+            >
+              Solicitar Cotización
+            </a>
+            </div>
           </div>
         </div>
 
@@ -79,6 +94,7 @@ const ItemDetail = () => {
                       {item[0].specs.print.maxPrintSpeed}
                     </li>
                   </div>
+                  <hr />
 
                   <div className='py-4'>
                     <p className='mb-2 font-bold'>General:</p>
@@ -97,6 +113,8 @@ const ItemDetail = () => {
                     </li>
                   </div>
 
+                  <hr />
+
                   <div className='py-4'>
                     <p className='mb-2 font-bold'>Conectividad:</p>
                     <li>
@@ -108,6 +126,8 @@ const ItemDetail = () => {
                       {item[0].specs.conectivity.netProtocols}
                     </li>
                   </div>
+
+                  <hr />
 
                   <div className='py-4'>
                     <p className='mb-2 font-bold'>Manejo de Papel</p>
@@ -150,6 +170,7 @@ const ItemDetail = () => {
               } mt-4 px-4 py-2  text-white rounded-lg  focus:outline-none`}
               onClick={handleVolver}
             >
+              
               <FaArrowLeftLong />
             </button>
             <a

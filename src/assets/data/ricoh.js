@@ -46,6 +46,7 @@ const products = [
       },
       modelCode: '408272',
       dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/sp3710sf/sp3710sf.htm?lang=es',
     },
   },
 
@@ -92,6 +93,7 @@ const products = [
       },
       modelCode: '408525T',
       dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/p310/p310.htm',
     },
   },
 
@@ -137,6 +139,7 @@ const products = [
       },
       modelCode: '418495',
       dataSheet: '/ricoh/dataSheet/dataSheet-502.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/p501/p501.htm',
     },
   },
 
@@ -183,6 +186,7 @@ const products = [
       },
       modelCode: '418460',
       dataSheet: '/ricoh/dataSheet/dataSheet-800.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/apc/model/p800/p800.htm',
     },
   },
 
@@ -230,6 +234,7 @@ const products = [
       },
       modelCode: '408266',
       dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/sp3710sf/sp3710sf.htm?lang=es',
     },
   },
 
@@ -276,6 +281,7 @@ const products = [
       },
       modelCode: '408534T',
       dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/m320f/m320f.htm?lang=es',
     },
   },
 
@@ -322,6 +328,7 @@ const products = [
       },
       modelCode: '408534T',
       dataSheet: '/ricoh/dataSheet/dataSheet-301.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/apc/model/mp301/mp301.htm?lang=es',
     },
   },
 
@@ -368,6 +375,7 @@ const products = [
       },
       modelCode: '417436',
       dataSheet: '/ricoh/dataSheet/dataSheet-305.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/apc/model/mp305_plus/mp305_plus.htm?lang=es',
     },
   },
 
@@ -413,6 +421,7 @@ const products = [
       },
       modelCode: '418491',
       dataSheet: '/ricoh/dataSheet/dataSheet-430.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/im430f/im430f.htm',
     },
   },
 
@@ -459,6 +468,7 @@ const products = [
       },
       modelCode: '418460',
       dataSheet: '/ricoh/dataSheet/dataSheet-550.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/im550/im550.htm',
     },
   },
 
@@ -503,6 +513,7 @@ const products = [
       },
       modelCode: 'MP2352',
       dataSheet: '/ricoh/dataSheet/dataSheet-2352.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc2/model/mp23/mp23.htm?lang=es',
     },
   },
 
@@ -547,6 +558,7 @@ const products = [
       },
       modelCode: 'MP3352',
       dataSheet: '/ricoh/dataSheet/dataSheet-2352.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc2/model/mp23/mp23.htm?lang=es',
     },
   },
 
@@ -590,6 +602,7 @@ const products = [
       },
       modelCode: 'MP2555',
       dataSheet: '/ricoh/dataSheet/dataSheet-2555.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/mp2595/mp2595.htm?lang=es',
     },
   },
 
@@ -637,6 +650,7 @@ const products = [
       },
       modelCode: 'MP2554',
       dataSheet: '/ricoh/dataSheet/dataSheet-2554.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/mp2554/mp2554.htm',
     },
   },
 
@@ -680,6 +694,7 @@ const products = [
       },
       modelCode: 'MPC305',
       dataSheet: '/ricoh/dataSheet/dataSheet-c305.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/re2/model/mpc305/mpc305.htm?lang=en',
     },
   },
 
@@ -725,6 +740,7 @@ const products = [
       },
       modelCode: 'MPC306',
       dataSheet: '/ricoh/dataSheet/dataSheet-c306.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/mcp306/mcp306.htm?lang=es',
     },
   },
 ];

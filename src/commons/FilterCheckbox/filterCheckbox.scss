@@ -1,6 +1,6 @@
 .checkbox {
   user-select: none;
-  input:checked ~ .checkmarkContainer {
+  input:checked ~ .checkmarkContainer_epson {
     // box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, .2);
     border-color: rgba(0, 0, 0, 0.8);
 
@@ -8,7 +8,23 @@
       display: block;
     }
   }
-  .checkmarkContainer {
+  input:checked ~ .checkmarkContainer_ricoh {
+    // box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, 0.8);
+
+    .checkmark {
+      display: block;
+    }
+  }
+  .checkmarkContainer_epson {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    .checkmark {
+      display: none;
+    }
+  }
+
+  .checkmarkContainer_ricoh {
     border: 1px solid rgba(0, 0, 0, 0.5);
 
     .checkmark {
@@ -16,9 +32,14 @@
     }
   }
 }
+
 .checkbox:hover {
-  .checkmarkContainer {
+  .checkmarkContainer_epson {
     border-color: #1a47a3 !important;
+    box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+  .checkmarkContainer_ricoh {
+    border-color: #c53e44 !important;
     box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, 0.2);
   }
 }

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import './filterCheckbox.scss';
+import { themes } from '../../utils/themes';
 
 const FilterCheckbox = ({ setState, label, name, theme }) => {
   return (
@@ -18,7 +19,9 @@ const FilterCheckbox = ({ setState, label, name, theme }) => {
         id={name}
         onChange={setState}
       />
-      <span className='checkmarkContainer h-6 w-6 rounded-lg flex items-center justify-center'>
+      <span
+        className={`checkmarkContainer_${theme} h-6 w-6 rounded-lg flex items-center justify-center`}
+      >
         <span className='checkmark'>
           <FontAwesomeIcon icon={faCheck} className={`text-${theme}`} />
         </span>

@@ -10,7 +10,9 @@ const Filter = ({ checkboxOnChange, theme }) => {
     <div className='filter bg-slate-200 fixed w-[300px] -ml-[300px] left-0 top-[168px] z-20 p-3.5 rounded-md rounded-tr-none hover:ml-0 shadow-lg'>
       <div className='relative'>
         <div className='absolute -right-[46px] -top-3.5 z-10 py-1.5 px-2.5 bg-slate-200 rounded-r-md'>
+        
           <FontAwesomeIcon icon={faChevronRight} size='lg' />
+          
         </div>
       </div>
       <p className='font-semibold text-md mb-1'>Filtrar por:</p>

@@ -158,8 +158,8 @@ const ItemDetail = () => {
           </div>
         </div>
 
-        <div className='w-[55%]'>
-          <div className='flex justify-between items-center '>
+        <div className='w-[100%]'>
+          <div className='flex justify-around items-center '>
             <button
               className={`${
                 theme === 'ricoh'
@@ -185,6 +185,19 @@ const ItemDetail = () => {
               href={item[0].specs.dataSheet}
             >
               Descargar Folleto
+            </a>
+            <a
+              className={`${
+                theme === themes.ricoh
+                  ? 'bg-ricoh hover:bg-ricohHover'
+                  : theme === themes.epson
+                  ? 'bg-epson hover:bg-epsonHover'
+                  : ''
+              } mt-4 px-4 py-2  text-white rounded-lg  focus:outline-none`}
+              target='_blank'
+              href={item[0].specs.drivers}
+            >
+              Drivers
             </a>
           </div>
         </div>

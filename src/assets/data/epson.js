@@ -45,6 +45,7 @@ const products = [
       },
       modelCode: 'C11CG94303',
       dataSheet: '/epson/datasheets/dataSheet-M-1180.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-M/Epson-M1180/s/SPT_C11CG94301',
     },
   },
   {
@@ -92,6 +93,7 @@ const products = [
       },
       modelCode: 'C11CG07301',
       dataSheet: '/epson/datasheets/dataSheet-WF-M5299.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5299/s/SPT_C11CG07201',
     },
   },
   {
@@ -138,6 +140,7 @@ const products = [
       },
       modelCode: 'C11CD47201',
       dataSheet: '/epson/datasheets/dataSheet-WF-6090.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-6090/s/SPT_C11CD47201',
     },
   },
   {
@@ -184,6 +187,7 @@ const products = [
       },
       modelCode: 'C11CG05301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C5290.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5290/s/SPT_C11CG05201?review-filter=Windows+10+64-bit',
     },
   },
   {
@@ -244,6 +248,7 @@ const products = [
       },
       modelCode: 'C11CG04301',
       dataSheet: '/epson/datasheets/dataSheet-WF-M5799.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5799/s/SPT_C11CG04201',
     },
   },
   {
@@ -299,7 +304,8 @@ const products = [
         speed: '6/5 ipm negro/color (ISO)',
       },
       modelCode: 'C11CJ88303',
-      dataSheet: '/epson/datasheets/dataSheet-WF-C5790.pdf',
+      dataSheet: '/epson/datasheets/dataSheet-L-6490.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L6490/s/SPT_C11CJ88301',
     },
   },
   {
@@ -360,6 +366,7 @@ const products = [
       },
       modelCode: 'C11CD49201',
       dataSheet: '/epson/datasheets/dataSheet-WF-6590.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-6590/s/SPT_C11CD49201?review-filter=Windows+7+64-bit',
     },
   },
   {
@@ -419,6 +426,7 @@ const products = [
       },
       modelCode: 'C11CG02301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C5790.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5790/s/SPT_C11CG02201?review-filter=Windows+8+32-bit',
     },
   },
   {
@@ -477,6 +485,7 @@ const products = [
       },
       modelCode: 'C11CH72303',
       dataSheet: '/epson/datasheets/dataSheet-L-15150.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L15150/s/SPT_C11CH72301?review-filter=Windows+7+32-bit',
     },
   },
   {
@@ -535,6 +544,7 @@ const products = [
       },
       modelCode: 'C11CH60301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C878R.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C878R/s/SPT_C11CH60201',
     },
   },
 ];

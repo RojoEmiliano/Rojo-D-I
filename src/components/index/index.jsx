@@ -75,7 +75,7 @@ function Index() {
           <h2 className='text-3xl italic text-center mb-5  '>Nuestro Enfoque y Servicios</h2>
           <div className='flex flex-row items-center justify-around gap-2 flex-wrap'>
             <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-              <img src={servicioTecnico} className='h-20 w-20' />
+              <img src={servicioTecnico} className='h-20 w-21' />
               <h3 className='text-xl font-semibold mt-2'>Servicio Técnico</h3>
               <p className='text-xl text-gray-500 mt-1 w-96'>
                 Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.
@@ -84,7 +84,7 @@ function Index() {
             </div>
 
             <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-              <img src={sobre} className='h-20 w-20' />
+              <img src={sobre} className='h-20 w-21' />
               <h3 className='text-xl font-semibold mt-2'>Sobre Nosotros</h3>
               <p className='text-xl text-gray-500 mt-1 w-96'>
                 Conoce nuestra historia y los valores que nos impulsan en Rojo.
@@ -92,7 +92,7 @@ function Index() {
             </div>
 
             <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform mt-2'>
-              <img src={contact} className='h-20 w-20' />
+              <img src={contact} className='h-20 w-21' />
               <h3 className='text-xl font-semibold mt-2'>Contáctanos</h3>
               <p className='text-xl text-gray-500 mt-1 w-96'>
                 ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.

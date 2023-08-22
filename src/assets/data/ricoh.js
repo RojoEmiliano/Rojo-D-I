@@ -1,3 +1,5 @@
+import { productsTypes } from '../../utils/productsTypes';
+
 const products = [
   //IMPRESORAS BYN
 
@@ -17,7 +19,7 @@ const products = [
       '/ricoh/img/sp3710/3710-3.jpg',
       '/ricoh/img/sp3710/3710-4.jpg',
     ],
-
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -44,6 +46,7 @@ const products = [
       },
       modelCode: '408272',
       dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/sp3710sf/sp3710sf.htm?lang=es',
     },
   },
 
@@ -63,7 +66,7 @@ const products = [
       '/ricoh/img/p311-m320/311-2.jpg',
       '/ricoh/img/p311-m320/311-3.jpg',
     ],
-
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -90,6 +93,7 @@ const products = [
       },
       modelCode: '408525T',
       dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/p310/p310.htm',
     },
   },
 
@@ -109,7 +113,7 @@ const products = [
       '/ricoh/img/p502/502-3.jpg',
       '/ricoh/img/p502/502-4.jpg',
     ],
-
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -135,6 +139,7 @@ const products = [
       },
       modelCode: '418495',
       dataSheet: '/ricoh/dataSheet/dataSheet-502.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/p501/p501.htm',
     },
   },
 
@@ -154,7 +159,7 @@ const products = [
       '/ricoh/img/p800/800-3.jpg',
       '/ricoh/img/p800/800-2.jpg',
     ],
-
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -181,6 +186,7 @@ const products = [
       },
       modelCode: '418460',
       dataSheet: '/ricoh/dataSheet/dataSheet-800.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/apc/model/p800/p800.htm',
     },
   },
 
@@ -195,14 +201,13 @@ const products = [
       'Capacidad de papel hasta 550 páginas',
       'Doble Faz automático',
     ],
-
     imgs: [
-      'ricoh/img/sp3710/3710sf.jpg',
-      'ricoh/img/sp3710/3710sf-2.jpg',
-      'ricoh/img/sp3710/3710sf-3.jpg',
-      'ricoh/img/sp3710/3710sf-4.jpg',
+      '/ricoh/img/sp3710/3710sf.jpg',
+      '/ricoh/img/sp3710/3710sf-2.jpg',
+      '/ricoh/img/sp3710/3710sf-3.jpg',
+      '/ricoh/img/sp3710/3710sf-4.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -229,6 +234,7 @@ const products = [
       },
       modelCode: '408266',
       dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/sp3710sf/sp3710sf.htm?lang=es',
     },
   },
 
@@ -248,7 +254,7 @@ const products = [
       '/ricoh/img/p311-m320/320-3.jpg',
       '/ricoh/img/p311-m320/320-4.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -275,6 +281,7 @@ const products = [
       },
       modelCode: '408534T',
       dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/m320f/m320f.htm?lang=es',
     },
   },
 
@@ -294,7 +301,7 @@ const products = [
       '/ricoh/img/mp301/301-3.jpg',
       '/ricoh/img/mp301/301-4.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -321,6 +328,7 @@ const products = [
       },
       modelCode: '408534T',
       dataSheet: '/ricoh/dataSheet/dataSheet-301.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/apc/model/mp301/mp301.htm?lang=es',
     },
   },
 
@@ -340,7 +348,7 @@ const products = [
       '/ricoh/img/mp305/305-2.jpg',
       '/ricoh/img/mp305/305-3.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -367,6 +375,7 @@ const products = [
       },
       modelCode: '417436',
       dataSheet: '/ricoh/dataSheet/dataSheet-305.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/apc/model/mp305_plus/mp305_plus.htm?lang=es',
     },
   },
 
@@ -386,7 +395,7 @@ const products = [
       '/ricoh/img/im430/430-3.jpg',
       '/ricoh/img/im430/430-4.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -412,6 +421,7 @@ const products = [
       },
       modelCode: '418491',
       dataSheet: '/ricoh/dataSheet/dataSheet-430.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/im430f/im430f.htm',
     },
   },
 
@@ -431,7 +441,7 @@ const products = [
       '/ricoh/img/im550/550-3.jpg',
       '/ricoh/img/im550/550-4.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -458,6 +468,7 @@ const products = [
       },
       modelCode: '418460',
       dataSheet: '/ricoh/dataSheet/dataSheet-550.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/im550/im550.htm',
     },
   },
 
@@ -472,11 +483,11 @@ const products = [
     ],
 
     imgs: [
-      'ricoh/img/a2352-3352/2352.jpg',
-      'ricoh/img/a2352-3352/2352-2.jpg',
-      'ricoh/img/a2352-3352/2352-3.jpg',
+      '/ricoh/img/a2352-3352/2352.jpg',
+      '/ricoh/img/a2352-3352/2352-2.jpg',
+      '/ricoh/img/a2352-3352/2352-3.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -502,6 +513,7 @@ const products = [
       },
       modelCode: 'MP2352',
       dataSheet: '/ricoh/dataSheet/dataSheet-2352.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc2/model/mp23/mp23.htm?lang=es',
     },
   },
 
@@ -516,11 +528,11 @@ const products = [
     ],
 
     imgs: [
-      'ricoh/img/a2352-3352/2352.jpg',
-      'ricoh/img/a2352-3352/2352-2.jpg',
-      'ricoh/img/a2352-3352/2352-3.jpg',
+      '/ricoh/img/a2352-3352/2352.jpg',
+      '/ricoh/img/a2352-3352/2352-2.jpg',
+      '/ricoh/img/a2352-3352/2352-3.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -546,6 +558,7 @@ const products = [
       },
       modelCode: 'MP3352',
       dataSheet: '/ricoh/dataSheet/dataSheet-2352.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc2/model/mp23/mp23.htm?lang=es',
     },
   },
 
@@ -559,8 +572,9 @@ const products = [
       'Doble Faz automático',
     ],
 
-    imgs: ['ricoh/img/mp2555/2555.jpg'],
+    imgs: ['/ricoh/img/mp2555/2555.jpg'],
 
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -588,6 +602,7 @@ const products = [
       },
       modelCode: 'MP2555',
       dataSheet: '/ricoh/dataSheet/dataSheet-2555.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/mp2595/mp2595.htm?lang=es',
     },
   },
 
@@ -607,7 +622,7 @@ const products = [
       '/ricoh/img/mp2554/2554-3.jpg',
       '/ricoh/img/mp2554/2554-4.jpg',
     ],
-
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -635,6 +650,7 @@ const products = [
       },
       modelCode: 'MP2554',
       dataSheet: '/ricoh/dataSheet/dataSheet-2554.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/mp2554/mp2554.htm',
     },
   },
 
@@ -650,8 +666,8 @@ const products = [
       'Doble Faz automático',
     ],
 
-    imgs: ['ricoh/img/mpc305/c305.jpg'],
-
+    imgs: ['/ricoh/img/mpc305/c305.jpg'],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -678,6 +694,7 @@ const products = [
       },
       modelCode: 'MPC305',
       dataSheet: '/ricoh/dataSheet/dataSheet-c305.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/re2/model/mpc305/mpc305.htm?lang=en',
     },
   },
 
@@ -696,7 +713,7 @@ const products = [
       '/ricoh/img/mpc306/306-3.jpg',
       '/ricoh/img/mpc306/306-2.jpg',
     ],
-
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'Impresion láser',
@@ -723,6 +740,7 @@ const products = [
       },
       modelCode: 'MPC306',
       dataSheet: '/ricoh/dataSheet/dataSheet-c306.pdf',
+      drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/mcp306/mcp306.htm?lang=es',
     },
   },
 ];

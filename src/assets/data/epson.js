@@ -1,3 +1,5 @@
+import { productsTypes } from '../../utils/productsTypes';
+
 const products = [
   {
     name: 'Impresora Epson EcoTank M1180',
@@ -14,6 +16,7 @@ const products = [
       '/epson/img/M-1180/M1180_690x460_3.jpg',
       '/epson/img/M-1180/M1180_690x460_6.jpg',
     ],
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Inyección de tinta PrecisionCore® monocromática optimizada',
@@ -42,6 +45,7 @@ const products = [
       },
       modelCode: 'C11CG94303',
       dataSheet: '/epson/datasheets/dataSheet-M-1180.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-M/Epson-M1180/s/SPT_C11CG94301',
     },
   },
   {
@@ -59,6 +63,7 @@ const products = [
       '/epson/img/WF-M5299/wf-m5299_left-tray-open_690x460.jpg',
       '/epson/img/WF-M5299/wf-m5299_desk-office_690x460.jpg',
     ],
+    type: productsTypes.iByN,
     specs: {
       print: {
         printTec: 'Precision Core® monocromático (negro)',
@@ -88,6 +93,7 @@ const products = [
       },
       modelCode: 'C11CG07301',
       dataSheet: '/epson/datasheets/dataSheet-WF-M5299.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5299/s/SPT_C11CG07201',
     },
   },
   {
@@ -105,6 +111,7 @@ const products = [
       '/epson/img/WF-6090/wf6090_prod05_left-multiple-trays-open_690x460.jpg',
       '/epson/img/WF-6090/wf6090_prod06_control-panel-display_690x460.jpg',
     ],
+    type: productsTypes.iColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -133,6 +140,7 @@ const products = [
       },
       modelCode: 'C11CD47201',
       dataSheet: '/epson/datasheets/dataSheet-WF-6090.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-6090/s/SPT_C11CD47201',
     },
   },
   {
@@ -151,6 +159,7 @@ const products = [
       '/epson/img/WF-C5290/WF-C5290__690x460_4.jpg',
       '/epson/img/WF-C5290/WF-C5290__690x460_6.jpg',
     ],
+    type: productsTypes.iColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -178,6 +187,7 @@ const products = [
       },
       modelCode: 'C11CG05301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C5290.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5290/s/SPT_C11CG05201?review-filter=Windows+10+64-bit',
     },
   },
   {
@@ -196,6 +206,7 @@ const products = [
       '/epson/img/WF-M5799/wf-m5799_multiple-trays-open_690x460.jpg',
       '/epson/img/WF-M5799/wf-m5799_desk-office_690x460.jpg',
     ],
+    type: productsTypes.mByN,
     specs: {
       print: {
         printTec: 'PrecisionCore® monocromático',
@@ -237,6 +248,7 @@ const products = [
       },
       modelCode: 'C11CG04301',
       dataSheet: '/epson/datasheets/dataSheet-WF-M5799.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5799/s/SPT_C11CG04201',
     },
   },
   {
@@ -252,6 +264,7 @@ const products = [
       '/epson/img/L-6490/ecotank-l6490-690x460-1.jpg',
       '/epson/img/L-6490/ecotank-l6490-690x460-2.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'PrecisionCore® 4 colores (CMYK)',
@@ -291,7 +304,8 @@ const products = [
         speed: '6/5 ipm negro/color (ISO)',
       },
       modelCode: 'C11CJ88303',
-      dataSheet: '/epson/datasheets/dataSheet-WF-C5790.pdf',
+      dataSheet: '/epson/datasheets/dataSheet-L-6490.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L6490/s/SPT_C11CJ88301',
     },
   },
   {
@@ -310,6 +324,7 @@ const products = [
       '/epson/img/WF-6590/wf6590_prod06_closeup-paper_690x460.jpg',
       '/epson/img/WF-6590/wf6590_prod07_control-panel-display_690x460.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec:
@@ -351,6 +366,7 @@ const products = [
       },
       modelCode: 'C11CD49201',
       dataSheet: '/epson/datasheets/dataSheet-WF-6590.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-6590/s/SPT_C11CD49201?review-filter=Windows+7+64-bit',
     },
   },
   {
@@ -369,6 +385,7 @@ const products = [
       '/epson/img/WF-C5790/WF-C5790_OTHER_ANG_5.jpg',
       '/epson/img/WF-C5790/WF-C5790_LIFESTYLE.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -409,6 +426,7 @@ const products = [
       },
       modelCode: 'C11CG02301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C5790.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5790/s/SPT_C11CG02201?review-filter=Windows+8+32-bit',
     },
   },
   {
@@ -427,6 +445,7 @@ const products = [
       '/epson/img/L-15150/L15150-690x460-4.jpg',
       '/epson/img/L-15150/L15150-690x460-6.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'PrecisionCore® 4 colores (CMYK) con cabezal fijo en línea',
@@ -466,6 +485,7 @@ const products = [
       },
       modelCode: 'C11CH72303',
       dataSheet: '/epson/datasheets/dataSheet-L-15150.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L15150/s/SPT_C11CH72301?review-filter=Windows+7+32-bit',
     },
   },
   {
@@ -483,6 +503,7 @@ const products = [
       '/epson/img/WF-C878R/WF-C878R_headon-with-stand_690x460.jpg',
       '/epson/img/WF-C878R/WF-C878R_right-with-stand_690x460.jpg',
     ],
+    type: productsTypes.mColor,
     specs: {
       print: {
         printTec: 'Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores',
@@ -523,6 +544,7 @@ const products = [
       },
       modelCode: 'C11CH60301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C878R.pdf',
+      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C878R/s/SPT_C11CH60201',
     },
   },
 ];

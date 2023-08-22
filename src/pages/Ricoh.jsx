@@ -12,7 +12,9 @@ function Ricoh() {
   const { Filter } = useFilter({ data: ricohProducts, setState: setProducts, theme: themes.ricoh });
 
   return (
-    <div className='w-full border'>
+    <div className='w-full px-8 flex justify-center border'>
+      <div className='max-w-[1600px] w-full'>
+
       <div className='flex items-center justify-center'>
         <img
           src='/ricoh/img/logo/ricoh.svg'
@@ -45,6 +47,7 @@ function Ricoh() {
             <div className='h-[60px]'></div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

@@ -59,9 +59,9 @@ const ItemDetail = () => {
             <a
               className={`${
                 theme === themes.ricoh
-                  ? '  bg-gray-100  hover:bg-ricoh hover:duration-100 border-2 border-ricoh text-ricoh '
+                  ? '  bg-gray-100  hover:bg-ricoh duration-700 border-2 border-ricoh text-ricoh '
                   : theme === themes.epson
-                  ? 'bg-gray-100 hover:bg-epson border-2 border-epson text-epson '
+                  ? 'bg-gray-100 hover:bg-epson duration-700 border-2 border-epson text-epson '
                   : ''
               } mt-4 px-4 py-2 hover:text-white   rounded-lg  focus:outline-none`}
               target='_blank'

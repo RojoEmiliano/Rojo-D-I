@@ -197,12 +197,11 @@ const products = [
       'Capacidad de papel hasta 550 páginas',
       'Doble Faz automático',
     ],
-
     imgs: [
-      'ricoh/img/sp3710/3710sf.jpg',
-      'ricoh/img/sp3710/3710sf-2.jpg',
-      'ricoh/img/sp3710/3710sf-3.jpg',
-      'ricoh/img/sp3710/3710sf-4.jpg',
+      '/ricoh/img/sp3710/3710sf.jpg',
+      '/ricoh/img/sp3710/3710sf-2.jpg',
+      '/ricoh/img/sp3710/3710sf-3.jpg',
+      '/ricoh/img/sp3710/3710sf-4.jpg',
     ],
     type: productsTypes.mByN,
     specs: {
@@ -474,9 +473,9 @@ const products = [
     ],
 
     imgs: [
-      'ricoh/img/a2352-3352/2352.jpg',
-      'ricoh/img/a2352-3352/2352-2.jpg',
-      'ricoh/img/a2352-3352/2352-3.jpg',
+      '/ricoh/img/a2352-3352/2352.jpg',
+      '/ricoh/img/a2352-3352/2352-2.jpg',
+      '/ricoh/img/a2352-3352/2352-3.jpg',
     ],
     type: productsTypes.mByN,
     specs: {
@@ -518,9 +517,9 @@ const products = [
     ],
 
     imgs: [
-      'ricoh/img/a2352-3352/2352.jpg',
-      'ricoh/img/a2352-3352/2352-2.jpg',
-      'ricoh/img/a2352-3352/2352-3.jpg',
+      '/ricoh/img/a2352-3352/2352.jpg',
+      '/ricoh/img/a2352-3352/2352-2.jpg',
+      '/ricoh/img/a2352-3352/2352-3.jpg',
     ],
     type: productsTypes.mByN,
     specs: {
@@ -561,7 +560,8 @@ const products = [
       'Doble Faz automático',
     ],
 
-    imgs: ['ricoh/img/mp2555/2555.jpg'],
+    imgs: ['/ricoh/img/mp2555/2555.jpg'],
+
     type: productsTypes.mByN,
     specs: {
       print: {
@@ -652,7 +652,7 @@ const products = [
       'Doble Faz automático',
     ],
 
-    imgs: ['ricoh/img/mpc305/c305.jpg'],
+    imgs: ['/ricoh/img/mpc305/c305.jpg'],
     type: productsTypes.mColor,
     specs: {
       print: {

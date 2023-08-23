@@ -1,11 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Carousel from 'react-bootstrap/Carousel';
-import Epson from '../../pages/epson/epson';
 import { Link } from 'react-router-dom';
 import React from 'react'
-import SliderComponent from '../Slider/Slider'
 import arrow from '../../assets/img/down-arrow.png'
 import brother from '../../assets/img/brother.svg'
 import contact from '../../assets/img/booking.png'
@@ -19,8 +18,6 @@ import ricohsvg from '../../assets/img/ricoh.svg'
 import samsung from '../../assets/img/samsung.svg'
 import servicioTecnico from '../../assets/img/customer-support.png'
 import sobre from '../../assets/img/people.png'
-import { themes } from '../../utils/themes';
-import tintasEpson from '../../assets/img/Tintas-Epson-T673.jpg'
 import wsp from '../../assets/img/whatsapp.png'
 
 function Index() {
@@ -33,7 +30,7 @@ function Index() {
     {/* -------------------------PORTADA------------------------------------------------- */}
     <div class="index flex flex-col text-center text-5xl italic justify-center gap-y-4 content-center w-full flex-wrap place-items-center">
       <h1 class="text-black font-normal text-6xl">¡BIENVENIDOS A <span className="text"><span className='word'>R</span>OJO</span>!</h1>
-      <h2 class="text-black text-xl text-gray-600 mt-2 text-5xl">EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN</h2>
+      <h2 class="text-black text-xl text-gray-800 mt-2 text-5xl">EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN</h2>
       <a href='#seccion1'>
         <div class="border-2 border-solid border-white-500 mt-3 rounded-full w-12 h-12 absolute cursor-pointer w-max relative animate-bounce">
           <img src={arrow} alt="arrow" class="h-12 relative z-10" />
@@ -117,11 +114,24 @@ function Index() {
       <div className='flex flex-col w-full p-16  h-90 flex-wrap'>
         <h2 className='text-3xl italic text-center  '>Nuestras Asociaciones de Calidad: Marcas de Confianza en Nuestro Trabajo</h2>
         <div className='flex justify-content-around items-center flex-wrap'>
-          <img className='h-20' src={hp}/>
-          <img className='h-40' src={samsung}/>
-          <img className='h-10' src={brother}/>
-          <img className='h-40' src={epsonsvg}/>
-          <img className='h-10' src={ricohsvg}/>
+        <Carousel className='h-48 w-full flex justify-center items-center mt-20'>
+          <Carousel.Item interval={1000}>
+            <img className='h-28 w-full object-contain' src={hp} alt='HP' />
+          </Carousel.Item>
+          <Carousel.Item interval={1200}>
+            <img className='h-28 w-full object-contain' src={samsung} alt='Samsung' />
+          </Carousel.Item>
+          <Carousel.Item interval={1200}>
+            <img className='h-28 w-full object-contain' src={epsonsvg} alt='Epson' />
+          </Carousel.Item>
+          <Carousel.Item interval={1200}>
+            <img className='h-20 w-full object-contain' src={ricohsvg} alt='Ricoh' />
+          </Carousel.Item>
+          <Carousel.Item interval={1200}>
+            <img className='h-20 w-full object-contain' src={brother} alt='Brother' />
+          </Carousel.Item>
+        </Carousel>
+
         </div>
       </div>
     </div>
@@ -129,5 +139,8 @@ function Index() {
 }
 
 export default Index
+
+
+
 
 

@@ -6,6 +6,7 @@ import Epson from '../../pages/epson/epson';
 import { Link } from 'react-router-dom';
 import React from 'react'
 import SliderComponent from '../Slider/Slider'
+import arrow from '../../assets/img/down-arrow.png'
 import brother from '../../assets/img/brother.svg'
 import contact from '../../assets/img/booking.png'
 import epson from '../../assets/img/epson.jpg'
@@ -30,19 +31,25 @@ function Index() {
       <a href='https://wa.link/xj5bzq' target='_blank'><img src={wsp} alt='wsp'/></a>
       </div>
     {/* -------------------------PORTADA------------------------------------------------- */}
-    <div class="index flex flex-col text-center text-5xl italic justify-center gap-y-4 content-center w-full h-40 flex-wrap place-items-center">
-    <h1 class="font-semibold">¡BIENVENIDOS A <span class="text-red-500">ROJO</span>!</h1>
-    <h2 class="text-xl text-gray-600 mt-2">EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN</h2>
-</div>
+    <div class="index flex flex-col text-center text-5xl italic justify-center gap-y-4 content-center w-full flex-wrap place-items-center">
+      <h1 class="text-black font-normal text-6xl">¡BIENVENIDOS A <span className="text"><span className='word'>R</span>OJO</span>!</h1>
+      <h2 class="text-black text-xl text-gray-600 mt-2 text-5xl">EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN</h2>
+      <a href='#seccion1'>
+        <div class="border-2 border-solid border-white-500 mt-3 rounded-full w-12 h-12 absolute cursor-pointer w-max relative animate-bounce">
+          <img src={arrow} alt="arrow" class="h-12 relative z-10" />
+        </div>
+      </a>
 
-      <div className='flex p-2 '>
+    </div>
+
+      <div id='seccion1' className='flex p-2 mt-4 '>
         <div className='w-2/4'> 
-          <img src={portadaepson} className='rounded-lg' />
+          <img src={portadaepson} className='rounded-lg drop-shadow-2xl' />
         </div>
 
         <div className='place-items-center w-2/4 justify-center items-center'>
           <div className='flex flex-col items-center'>
-            <img src={epson} className='w-40 '/>
+            <img src={epson} className='w-40  '/>
           </div>
           <div className='flex flex-col items-center'>
             <p className='p-6 text-xl'>Epson es una reconocida marca global en tecnología de impresión, conocida por su compromiso con la innovación y la calidad en el mundo de las impresoras y las tintas. Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión de alta calidad para hogares y empresas.</p>
@@ -55,12 +62,12 @@ function Index() {
 
       <div className='flex flex-row-reverse p-2 items-center '>
         <div className='w-2/4'> 
-          <img src={portadaricoh} className='rounded-lg' />
+          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl' />
         </div>
 
         <div className='place-items-center w-2/4 justify-center items-center'>
           <div className='flex flex-col items-center'>
-            <img src={ricoh} className='w-40 '/>
+            <img src={ricoh} className='w-40'/>
           </div>
           <div className='flex flex-col items-center'>
             <p className='p-6 text-xl'>Ricoh es una destacada empresa global en tecnología de impresión y soluciones de oficina. Reconocida por su enfoque en la innovación y la eficiencia, Ricoh ofrece una amplia gama de impresoras y tintas diseñadas para satisfacer las necesidades tanto de empresas como de usuarios individuales.</p>
@@ -70,34 +77,39 @@ function Index() {
           </div>
         </div>
       </div>
-      {/* ---------------------------------MARCAS-------------------------------------------- */}
+      {/* ---------------------------------SERVICIOS-------------------------------------------- */}
       <div className='flex flex-col w-full p-16 bg-slate-50 h-90'>
           <h2 className='text-3xl italic text-center mb-5  '>Nuestro Enfoque y Servicios</h2>
           <div className='flex flex-row items-center justify-around gap-2 flex-wrap'>
-            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-              <img src={servicioTecnico} className='h-20 w-21' />
-              <h3 className='text-xl font-semibold mt-2'>Servicio Técnico</h3>
-              <p className='text-xl text-gray-500 mt-1 w-96'>
-                Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.
-              </p>
+            <Link to=''>
+              <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
+                <img src={servicioTecnico} className='h-20 w-21' />
+                <h3 className='text-xl font-semibold mt-2'>Servicio Técnico</h3>
+                <p className='text-xl text-gray-500 mt-1 w-96'>
+                  Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.
+                </p>
+              </div>
+            </Link>
 
-            </div>
-
-            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-              <img src={sobre} className='h-20 w-21' />
-              <h3 className='text-xl font-semibold mt-2'>Sobre Nosotros</h3>
-              <p className='text-xl text-gray-500 mt-1 w-96'>
-                Conoce nuestra historia y los valores que nos impulsan en Rojo.
-              </p>
-            </div>
-
-            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform mt-2'>
-              <img src={contact} className='h-20 w-21' />
-              <h3 className='text-xl font-semibold mt-2'>Contáctanos</h3>
-              <p className='text-xl text-gray-500 mt-1 w-96'>
-                ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.
-              </p>
-            </div>
+            <Link to=''>
+              <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
+                <img src={sobre} className='h-20 w-21' />
+                <h3 className='text-xl font-semibold mt-2'>Sobre Nosotros</h3>
+                <p className='text-xl text-gray-500 mt-1 w-96'>
+                  Conoce nuestra historia y los valores que nos impulsan en Rojo.
+                </p>
+              </div>
+            </Link>
+            
+            <Link to=''>
+              <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform mt-2'>
+                <img src={contact} className='h-20 w-21' />
+                <h3 className='text-xl font-semibold mt-2'>Contáctanos</h3>
+                <p className='text-xl text-gray-500 mt-1 w-96'>
+                  ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -119,30 +131,3 @@ function Index() {
 export default Index
 
 
-{/* <div className='Container'>
-<div className='imgContainer'>
-  <img className='indexImg' src={portadaepson}  />
-  <div className='marca'>
-    <img className='marcaImg' src={epson} />
-  </div>
-</div>
-<div className='imgContainer'>
-  <img className='indexImg' src={portadaricoh}  />
-  <div className='marca'>
-    <img className='marcaImg' src={ricoh} />
-  </div>
-</div>
-</div>
-<div className='indexTitle'>
-  <p className='title'>INSUMOS Y SERVICIOS</p>
-  <div className='indexMarcas'>
-    <img id='ricohsvg' className='marcasItem' src={ricohsvg} alt="Ricoh" />
-    <img className='marcasItem' src={epsonsvg} alt="epson" />
-    <img className='marcasItem' src={samsung} alt="samsung" />
-    <img className='marcasItem' src={hp} alt="hp" />
-    <img className='marcasItem' src={brother} alt="brother" />
-  </div>
-  <span>Consultar por modelos y stock</span>
-  <hr />
-
-</div>     */}

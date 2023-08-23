@@ -1,5 +1,22 @@
+.index{
+    background-image: linear-gradient(rgba(129, 128, 128, 0.5), rgba(131, 128, 128, 0.5)), url('../../assets/img/oficinaEpson.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position-y:48% ;
+    height: 78vh;
+}
 
+.text{
+    color: black;
+    text-decoration: underline;
+    padding: .3rem;
+}
 
+.word{
+    color: white;
+    background-color: #BF292F;
+}
 
 .image{
     margin: 0rem 20rem;

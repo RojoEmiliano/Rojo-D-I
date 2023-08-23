@@ -6,6 +6,7 @@ import './epson.scss';
 import ShowMoreButton from '../../commons/ShowMoreButton/ShowMoreButton';
 import { themes } from '../../utils/themes';
 import { useFilter } from '../../hooks/useFilter';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 const Epson = () => {
   const [products, setProducts] = useState(epsonProducts);
@@ -21,13 +22,13 @@ const Epson = () => {
           />
         </div>
         {Filter}
-        <div className='flex flex-wrap justify-evenly'>
+        <div className={`flex mbMax:flex-col mbMax:items-center mb:flex-wrap mb:justify-evenly`}>
           {products.map(product => (
             <div
               key={product.name}
-              className={`productCard flex flex-col items-center border mt-7 max-w-[500px] relative`}
+              className={`productCard flex flex-col items-center border mt-7 sbMax:max-w-[350px] sb:max-w-[500px] relative`}
             >
-              <div className='w-full max-h-[338px]'>
+              <div className='w-full'>
                 <SliderComponent slides={product.imgs} theme={themes.epson} />
               </div>
               <div className='w-full text-center bg-white px-4'>

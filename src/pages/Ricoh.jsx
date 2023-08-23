@@ -12,7 +12,7 @@ function Ricoh() {
   const { Filter } = useFilter({ data: ricohProducts, setState: setProducts, theme: themes.ricoh });
 
   return (
-    <div className='w-full px-8 flex justify-center'>
+    <div className='w-full lb:px-8 px-2 flex justify-center'>
       <div className='max-w-[1600px] w-full'>
         <div className='flex items-center justify-center'>
           <img
@@ -28,14 +28,14 @@ function Ricoh() {
               className={`productCard flex flex-col items-center border mt-7 sbMax:max-w-[350px] sb:max-w-[500px] relative`}
             >
               <div className='w-full'>
-                <SliderComponent slides={product.imgs} theme={themes.epson} />
+                <SliderComponent slides={product.imgs} theme={themes.ricoh} />
               </div>
               <div className='w-full text-center bg-white px-4'>
                 <h2 className='font-medium text-xl'>{product.name}</h2>
               </div>
               <ShowMoreButton
-                theme={themes.epson}
-                brand='epson'
+                theme={themes.ricoh}
+                brand='ricoh'
                 modelCode={product.specs.modelCode}
               />
               <div className='h-[60px]'></div>

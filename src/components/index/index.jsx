@@ -115,20 +115,20 @@ function Index() {
         <h2 className='text-3xl italic text-center  '>Nuestras Asociaciones de Calidad: Marcas de Confianza en Nuestro Trabajo</h2>
         <div className='flex justify-content-around items-center flex-wrap'>
         <Carousel className='h-48 w-full flex justify-center items-center mt-20'>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item className='h-28 w-full object-contain' interval={1000}>
             <img className='h-28 w-full object-contain' src={hp} alt='HP' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
             <img className='h-28 w-full object-contain' src={samsung} alt='Samsung' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
             <img className='h-28 w-full object-contain' src={epsonsvg} alt='Epson' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
-            <img className='h-20 w-full object-contain' src={ricohsvg} alt='Ricoh' />
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
+            <img className='h-12 w-full object-contain' src={ricohsvg} alt='Ricoh' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
-            <img className='h-20 w-full object-contain' src={brother} alt='Brother' />
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
+            <img className='h-12 w-full object-contain' src={brother} alt='Brother' />
           </Carousel.Item>
         </Carousel>
 

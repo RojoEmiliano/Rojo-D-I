@@ -4,17 +4,13 @@ import { productsTypes } from '../utils/productsTypes';
 import Filter from '../components/Filter/Filter';
 import useMediaQuery from './useMediaQuery';
 import MobileFilter from '../components/Filter/MobileFilter';
+import { checkFilter } from '../utils/checkFilter';
 
 export const useFilter = ({ data, setState, theme }) => {
   const [filter, setFilter] = useState({});
 
   useEffect(() => {
-    const filterValues = Object.values(filter);
-    let isFiltering = false;
-
-    for (let i = 0; i < filterValues.length; i++) {
-      if (filterValues[i] !== '') isFiltering = true;
-    }
+    const isFiltering = checkFilter(filter);
 
     if (isFiltering) {
       setState(() =>
@@ -46,9 +42,9 @@ export const useFilter = ({ data, setState, theme }) => {
 
   return {
     Filter: useMediaQuery(1024) ? (
-      <MobileFilter checkboxOnChange={checkboxOnChange} theme={theme} />
+      <MobileFilter checkboxOnChange={checkboxOnChange} theme={theme} filter={filter} />
     ) : (
-      <Filter checkboxOnChange={checkboxOnChange} theme={theme} />
+      <Filter checkboxOnChange={checkboxOnChange} theme={theme} filter={filter} />
     ),
   };
 };

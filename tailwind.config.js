@@ -17,6 +17,9 @@ export default {
         'mbMax': {'max': '700px'},
         'lbMax': {'max': '1024px'},
       },
+			boxShadow: {
+				x: '0 -2px 16px -2px rgb(0 0 0 / 0.1)'
+			}
 		},
 	},
 	plugins: [],

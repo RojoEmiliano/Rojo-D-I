@@ -50,7 +50,7 @@ const ItemDetail = () => {
       </div>
       <div className='mt-4 p-4 bg-gray-100 shadow-md'>
         <div className='flex lbMax:flex-col lbMax:items-center sb:px-10 justify-between'>
-          <div className='lb:w-1/2 lb:max-w-[700px] sb:max-w-[500px] sbMax:max-w-[350px] h-fit'>
+          <div className='lb:w-1/2 lb:max-w-[700px] sb:max-w-[500px] sbMax:max-w-[350px] h-fit bg-white'>
             {useMediaQuery(1024) && (
               <div className='mb:text-3xl sb:text-2xl sbMax:text-xl font-semibold mb-4 text-center sbMax:px-2'>
                 {item[0].name}
@@ -72,8 +72,11 @@ const ItemDetail = () => {
             </ul>
             <button className='h-10 mt-2 self-start sbMax:self-center'>
               <a
-                className={`bg-gray-100 hover:bg-${theme}Hover duration-700 border-2 border-${theme} text-${theme} px-4 py-2 
-                hover:text-white rounded-lg focus:outline-none`}
+                className={`bg-gray-100 ${
+                  theme === themes.epson
+                    ? 'hover:bg-epson text-epson border-epson'
+                    : 'hover:bg-ricoh text-ricoh border-ricoh'
+                } duration-700 border-2 px-4 py-2 hover:text-white rounded-lg focus:outline-none`}
                 target='_blank'
                 href='https://wa.link/xj5bzq'
               >

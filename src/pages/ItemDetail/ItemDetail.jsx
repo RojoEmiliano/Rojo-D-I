@@ -72,7 +72,7 @@ const ItemDetail = () => {
             </ul>
             <button className='h-10 mt-2 self-start sbMax:self-center'>
               <a
-                className={`bg-gray-100 hover:bg-${theme} duration-700 border-2 border-${theme} text-${theme} px-4 py-2 
+                className={`bg-gray-100 hover:bg-${theme}Hover duration-700 border-2 border-${theme} text-${theme} px-4 py-2 
                 hover:text-white rounded-lg focus:outline-none`}
                 target='_blank'
                 href='https://wa.link/xj5bzq'

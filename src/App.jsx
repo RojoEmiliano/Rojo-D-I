@@ -8,6 +8,7 @@ import Epson from './pages/epson/epson';
 import './App.css';
 import Ricoh from './pages/ricoh';
 import ItemDetail from './pages/ItemDetail/ItemDetail';
+import SobreNosotros from './pages/SobreNosotros/SobreNosotros';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/epson' element={<Epson />} />
           <Route path='/ricoh/detail/:modelCode' element={<ItemDetail />} />
           <Route path='/epson/detail/:modelCode' element={<ItemDetail />} />
+          <Route path='/nosotros' element={<SobreNosotros />} />
         </Routes>
         <Footer />
       </div>

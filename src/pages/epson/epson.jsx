@@ -13,7 +13,7 @@ const Epson = () => {
   const { Filter } = useFilter({ data: epsonProducts, setState: setProducts, theme: themes.epson });
 
   return (
-    <div className='w-full px-8 flex justify-center'>
+    <div className='w-full lb:px-8 px-2 flex justify-center'>
       <div className='max-w-[1600px] w-full'>
         <div className='flex items-center justify-center'>
           <img

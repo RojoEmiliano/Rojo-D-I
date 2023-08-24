@@ -16,7 +16,7 @@ function Ricoh() {
       <div className='max-w-[1600px] w-full'>
         <div className='flex items-center justify-center'>
           <img
-            src='/epson/img/logo/epson.svg'
+            src='/ricoh/img/logo/ricoh.svg'
             className='pt-10 max-w-[200px] max-h-[200px] flex justify-center items-center'
           />
         </div>

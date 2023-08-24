@@ -8,12 +8,13 @@ import { themes } from '../../utils/themes';
 
 const Filter = ({ checkboxOnChange, theme }) => {
   return (
-    <div className={`filter ${theme === themes.epson ? 'bg-blue-200' : 'bg-red-200'} fixed w-[300px] -ml-[300px] h-[185px] left-0 top-[168px] z-20 p-3.5 hover:ml-0 shadow-lg`}>
+    <div className={`filter bg-gray-200 fixed w-[300px] -ml-[300px] h-[185px] left-0 top-[168px] z-20 p-3.5 hover:ml-0 shadow-lg`}>
       <div className='relative'>
-        <div className={`absolute -right-[46px] -top-3.5 z-10 py-1.5 px-2.5 ${theme === themes.epson ? 'bg-blue-300' : 'bg-red-300'} rounded-tr-md`}>
+        <div className={`absolute -right-[46px] -top-3.5 z-10 py-1.5 px-2.5 bg-gray-300 rounded-tr-md`}>
           <FontAwesomeIcon icon={faChevronRight} size='lg' />
         </div>
-        <div className={`absolute flex flex-col justify-evenly items-center px-[11.5px] py-1.5 h-[149px] ${theme === themes.epson ? 'bg-blue-300' : 'bg-red-300'} -right-[46px] top-[22px] rounded-br-md`}>
+        <div className={`absolute flex flex-col justify-evenly items-center px-[11.5px] py-1.5 h-[149px] 
+        bg-gray-300 -right-[46px] top-[22px] rounded-br-md`}>
           <FontAwesomeIcon icon={faF} size='2xs' />
           <FontAwesomeIcon icon={faI} size='2xs' />
           <FontAwesomeIcon icon={faL} size='2xs' />

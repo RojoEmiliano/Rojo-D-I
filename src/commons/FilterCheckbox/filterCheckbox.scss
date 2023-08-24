@@ -3,6 +3,7 @@
   input:checked ~ .checkmarkContainer_epson {
     // box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, .2);
     border-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #1a47a3;
 
     .checkmark {
       display: block;
@@ -11,6 +12,7 @@
   input:checked ~ .checkmarkContainer_ricoh {
     // box-shadow: 2px 1px 4px 0px rgba(0, 0, 0, .2);
     border-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #c53e44;
 
     .checkmark {
       display: block;

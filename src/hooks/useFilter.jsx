@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 
 import { productsTypes } from '../utils/productsTypes';
 import Filter from '../components/Filter/Filter';
+import useMediaQuery from './useMediaQuery';
+import MobileFilter from '../components/Filter/MobileFilter';
 
 export const useFilter = ({ data, setState, theme }) => {
   const [filter, setFilter] = useState({});
@@ -43,6 +45,10 @@ export const useFilter = ({ data, setState, theme }) => {
   };
 
   return {
-    Filter: <Filter checkboxOnChange={checkboxOnChange} theme={theme} />,
+    Filter: useMediaQuery(1024) ? (
+      <MobileFilter checkboxOnChange={checkboxOnChange} theme={theme} />
+    ) : (
+      <Filter checkboxOnChange={checkboxOnChange} theme={theme} />
+    ),
   };
 };

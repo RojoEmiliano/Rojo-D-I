@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaRegHandshake, FaWalking, FaPeopleCarry } from 'react-icons/fa';
 import { FaHeartPulse, FaScaleBalanced } from 'react-icons/fa6';
-import './sobreNosotros.scss';
+import './about.scss';
 
 const SobreNosotros = () => {
   return (

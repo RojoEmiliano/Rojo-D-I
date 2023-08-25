@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegHandshake, FaWalking, FaPeopleCarry } from 'react-icons/fa';
 import { FaHeartPulse, FaScaleBalanced } from 'react-icons/fa6';
+import {GiPodiumWinner} from 'react-icons/gi'
 import './about.scss';
 
 const SobreNosotros = () => {
@@ -93,7 +94,7 @@ const SobreNosotros = () => {
           </p>
         </div>
         <div className='flex flex-col items-center w-1/4 h-[272px] bg-white p-6 m-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-          <FaHeartPulse className='text-9xl text-ricoh' />
+          <GiPodiumWinner className='text-9xl text-ricoh' />
           <h3 className='text-xl font-semibold mt-2'>Espíritu Ganador</h3>
           <p className='text-xl text-gray-500 mt-1 text-center justify-self-center'>
             Tener éxito aceptando desafíos a través del coraje y la agilidad.

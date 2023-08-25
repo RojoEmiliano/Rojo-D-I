@@ -39,16 +39,16 @@ function Index() {
 
     </div>
 
-      <div id='seccion1' className='flex p-2 mt-4 '>
+      <div id='seccion1' className='flex p-2 mt-4 items-center '>
         <div className='w-2/4'> 
-          <img src={portadaepson} className='rounded-lg drop-shadow-2xl' />
+          <img src={portadaepson} className='rounded-lg drop-shadow-2xl epson' />
         </div>
 
         <div className='place-items-center w-2/4 justify-center items-center'>
           <div className='flex flex-col items-center'>
             <img src={epson} className='w-40  '/>
           </div>
-          <div className='flex flex-col items-center'>
+          <div className='flex flex-col items-center justify-center'>
             <p className='p-6 text-xl'>Epson es una reconocida marca global en tecnología de impresión, conocida por su compromiso con la innovación y la calidad en el mundo de las impresoras y las tintas. Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión de alta calidad para hogares y empresas.</p>
             <Link to='/epson'>
               <button className='buttonEpson'>IR A EPSON</button>
@@ -59,7 +59,7 @@ function Index() {
 
       <div className='flex flex-row-reverse p-2 items-center '>
         <div className='w-2/4'> 
-          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl' />
+          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl ricoh' />
         </div>
 
         <div className='place-items-center w-2/4 justify-center items-center'>

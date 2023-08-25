@@ -55,5 +55,14 @@
         cursor: pointer;
     }
 }
+
+@media (min-width:1390px) and (max-width:1600px){
+    .epson{
+        height:32rem
+    }
+    .ricoh{
+        height:32rem
+    }
+}
   
 

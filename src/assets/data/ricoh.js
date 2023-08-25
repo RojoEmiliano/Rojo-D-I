@@ -232,7 +232,7 @@ const products = [
           'Bandeja de 250 hojas + Bypass de 50 hojas (recomendada). 550 hojas max.',
         paperOutCapacity: '50 hojas',
       },
-      modelCode: '408266',
+      modelCode: 'M03002',
       dataSheet: '/ricoh/dataSheet/dataSheet-3710.pdf',
       drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/sp3710sf/sp3710sf.htm?lang=es',
     },
@@ -282,6 +282,53 @@ const products = [
       modelCode: '408534T',
       dataSheet: '/ricoh/dataSheet/dataSheet-320.pdf',
       drivers: 'http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/m320f/m320f.htm?lang=es',
+    },
+  },
+
+  {
+    name: 'M 400FW Impresora multifunción láser en blanco y negro',
+    description: [
+      'Solución B&N A4 productiva, conectable y segura para trabajar desde casa e híbrida',
+      'Imprime hasta 40 ppm (A4)/42 ppm (Carta), copia, escanea, fax',
+      'Resolución de impresión máxima de 2400 x 600 ppp',
+      'Capacidad de papel de hasta 900 hojas',
+      'Doble Faz automático',
+    ],
+
+    imgs: [
+      '/ricoh/img/m400/400.jpg',
+      '/ricoh/img/m400/400-2.jpg',
+      '/ricoh/img/m400/400-3.jpg',
+      '/ricoh/img/m400/400-4.jpg',
+    ],
+    type: productsTypes.mByN,
+    specs: {
+      print: {
+        printTec: 'Impresion láser',
+        maxRes: 'hasta 2400 x 600 ppp',
+        maxPrintSpeed: '40ppm',
+      },
+      general: {
+        os: 'Windows® 8.1, Windows® 10, Windows® Server 2012, Windows® Server 2012R2, Windows® Server 2016, Macintosh OS X v10.10 o posterior. Entorno Linux ',
+        size: '41,1 x 36,6x 33,8 cm',
+        weight: '12,8 kg',
+      },
+      conectivity: {
+        standarConectivity: 'Ethernet 10/100 Base TX (RJ-45) USB compatible con USB 2.0 Especificación (Type B)',
+        netProtocols: 'TCP/IP v4, TCP/IP v6',
+      },
+      paperHandling: {
+        paperSize: 'A4, A5, A6, B5, B6, carta, legal',
+        paperType:
+          'Delgado, Regular, Grueso, Reciclado, De Color, Especial, Con Membrete, Preimpreso, Bond*, Cartulina* Etiquetas*, Sobres** Estándar',
+        paperWeight: '60 - 217 g/m²',
+        paperEntryCapacity:
+          'Bandeja de 350 hojas(recomendada). 900 hojas max.',
+        paperOutCapacity: '150 hojas',
+      },
+      modelCode: 'm400',
+      dataSheet: '/ricoh/dataSheet/dataSheet-400.pdf',
+      drivers: 'https://www.ricoh-americalatina.com/es/drivers-m400fw',
     },
   },
 

@@ -1,12 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
+import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import React from 'react'
-import Slider from 'react-slick';
 import arrow from '../../assets/img/down-arrow.png'
 import brother from '../../assets/img/brother.svg'
 import contact from '../../assets/img/booking.png'
@@ -33,8 +31,7 @@ function Index() {
       </div>
     {/* -------------------------PORTADA------------------------------------------------- */}
     <div class="index flex flex-col text-center text-5xl italic justify-center gap-y-4 content-center w-full flex-wrap place-items-center">
-      <h1 class="text-black font-normal text-6xl">¡BIENVENIDOS A <span className="text"><span className='word'>R</span>OJO</span>!</h1>
-      <h2 class="text-black text-xl text-gray-800 mt-2 text-5xl">EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN</h2>
+      <h2 class="text-black font-normal mt-2 text-5xl">EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN</h2>
       <a href='#seccion1'>
         <div class="border-2 border-solid border-white-500 mt-3 rounded-full w-12 h-12 absolute cursor-pointer w-max relative animate-bounce">
           <img src={arrow} alt="arrow" class="h-12 relative z-10" />
@@ -117,8 +114,8 @@ function Index() {
       {/* ---------------------------------MARCAS-------------------------------------------- */}
       <div className='flex flex-col w-full p-16  h-90 flex-wrap'>
         <h2 className='text-3xl italic text-center  '>Nuestras Asociaciones de Calidad: Marcas de Confianza en Nuestro Trabajo</h2>
-        <div className='flex justify-content-around items-center flex-wrap'>
-
+        <div className='flex  flex-wrap h-96'>
+          
 
         </div>
       </div>
@@ -127,7 +124,6 @@ function Index() {
 }
 
 export default Index
-
 
 
 

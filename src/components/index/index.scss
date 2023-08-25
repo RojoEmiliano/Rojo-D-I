@@ -24,32 +24,24 @@
 }
 
 .buttonEpson{
-    color: #003399ea ;
-    border: 2px solid #003399ea;
-    background-color: white;
     padding: .5rem;
     border-radius: .5rem;
     height: 20%;
     width: auto;
     transition: all .4s;
+    border: solid 2px #003399;
     &:hover{
-        background-color: #003399ea ;
-        color: white;
     }
 }
 
 .buttonRicoh{
-    color: #BF292F;
-    border: 2px solid #BF292F;
-    background-color: white;
     padding: .5rem;
     border-radius: .5rem;
     height: 20%;
     width: auto;
     transition: all .4s;
+    border: solid 2px #BF292F; 
     &:hover{
-        background-color: #BF292F;
-        color: white;
     }
 }
 

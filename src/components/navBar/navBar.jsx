@@ -70,7 +70,7 @@ const NavBar = () => {
 						</Link>
 					</div>
 					<div className="headerItemContainer">
-						<Link className="headerItem" to="/about">
+						<Link className="headerItem" to="/nosotros">
 							<a
 								className={`${
 									theme === themes.about

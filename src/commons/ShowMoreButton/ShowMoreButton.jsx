@@ -7,7 +7,8 @@ const ShowMoreButton = ({ theme, modelCode, brand }) => {
   return (
     <Link
       to={`/${brand}/detail/${modelCode}`}
-      className={`vermas flex justify-end items-center px-4 text-white font-regular absolute rounded-md w-[40%] h-8 bg-${theme} hover:bg-${theme}Hover`}
+      className={`lbMax:!bottom-5 lbMax:!z-10 vermas flex justify-end items-center text-white font-regular absolute rounded-md 
+      sbMax:w-[50%] sbMax:px-3 sb:w-[40%] sb:px-4 h-8 bg-${theme} hover:bg-${theme}Hover`}
     >
       <div className='w-[70%] flex justify-between items-center'>
         <span>Ver Más</span>

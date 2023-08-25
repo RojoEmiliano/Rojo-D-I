@@ -52,7 +52,7 @@ function Index() {
           <div className='flex flex-col items-center justify-center'>
             <p className='p-6 text-xl'>Epson es una reconocida marca global en tecnología de impresión, conocida por su compromiso con la innovación y la calidad en el mundo de las impresoras y las tintas. Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión de alta calidad para hogares y empresas.</p>
             <Link to='/epson'>
-              <button className='buttonEpson'>IR A EPSON</button>
+              <button className='buttonEpson'>VER PRODUCTOS</button>
             </Link>
           </div>
         </div>
@@ -70,7 +70,7 @@ function Index() {
           <div className='flex flex-col items-center'>
             <p className='p-6 text-xl'>Ricoh es una destacada empresa global en tecnología de impresión y soluciones de oficina. Reconocida por su enfoque en la innovación y la eficiencia, Ricoh ofrece una amplia gama de impresoras y tintas diseñadas para satisfacer las necesidades tanto de empresas como de usuarios individuales.</p>
             <Link to='/ricoh'>
-              <button className='buttonRicoh bg'>IR A RICOH</button>
+              <button className='buttonRicoh'>VER PRODUCTOS</button>
             </Link>
           </div>
         </div>
@@ -89,7 +89,7 @@ function Index() {
               </div>
             </Link>
 
-            <Link to=''>
+            <Link to='/nosotros'>
               <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
                 <img src={sobre} className='h-20 w-21' />
                 <h3 className='text-xl font-semibold mt-2'>Sobre Nosotros</h3>

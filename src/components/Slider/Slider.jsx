@@ -4,12 +4,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import ArrowButton from '../../commons/ArrowButton/ArrowButton';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
-const SliderComponent = ({ slides, theme }) => {
+const SliderComponent = ({ slides, theme, dots }) => {
   const sliderRef = useRef(null);
 
   const settings = {
-    dots: false, // Muestra los puntos de navegación
+    dots: dots, // Muestra los puntos de navegación
     infinite: true, // Permite navegar infinitamente
     speed: 500, // Velocidad de animación en milisegundos
     slidesToShow: 1, // Número de slides a mostrar en una vista
@@ -28,8 +29,20 @@ const SliderComponent = ({ slides, theme }) => {
           return <img key={slide} src={slide} alt='impresora' />;
         })}
       </Slider>
-      <ArrowButton onClick={() => sliderRef.current.slickPrev()} theme={theme} orientation='left-2' />
-      <ArrowButton onClick={() => sliderRef.current.slickNext()} theme={theme} orientation='right-2' />
+      {!useMediaQuery(1024) ? (
+        <>
+          <ArrowButton
+            onClick={() => sliderRef.current.slickPrev()}
+            theme={theme}
+            orientation='left-2'
+          />
+          <ArrowButton
+            onClick={() => sliderRef.current.slickNext()}
+            theme={theme}
+            orientation='right-2'
+          />
+        </>
+      ) : null}
     </div>
   );
 };

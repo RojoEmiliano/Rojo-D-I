@@ -4,11 +4,17 @@
     transition: bottom 0.25s ease-in-out, z-index 0s 0.2s;
     z-index: 0;
   }
+  .arrowButton {
+    opacity: 1;
+  }
 }
 .productCard {
   .vermas {
     bottom: 100px;
     transition: bottom 0.25s ease-in-out;
     z-index: -1;
+  }
+  .arrowButton {
+    opacity: 0;
   }
 }

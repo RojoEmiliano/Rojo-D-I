@@ -39,16 +39,16 @@ function Index() {
 
     </div>
 
-      <div id='seccion1' className='flex p-2 mt-4 '>
+      <div id='seccion1' className='flex p-2 mt-4 items-center '>
         <div className='w-2/4'> 
-          <img src={portadaepson} className='rounded-lg drop-shadow-2xl' />
+          <img src={portadaepson} className='rounded-lg drop-shadow-2xl epson' />
         </div>
 
         <div className='place-items-center w-2/4 justify-center items-center'>
           <div className='flex flex-col items-center'>
             <img src={epson} className='w-40  '/>
           </div>
-          <div className='flex flex-col items-center'>
+          <div className='flex flex-col items-center justify-center'>
             <p className='p-6 text-xl'>Epson es una reconocida marca global en tecnología de impresión, conocida por su compromiso con la innovación y la calidad en el mundo de las impresoras y las tintas. Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión de alta calidad para hogares y empresas.</p>
             <Link to='/epson'>
               <button className='buttonEpson'>VER PRODUCTOS</button>
@@ -59,7 +59,7 @@ function Index() {
 
       <div className='flex flex-row-reverse p-2 items-center '>
         <div className='w-2/4'> 
-          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl' />
+          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl ricoh' />
         </div>
 
         <div className='place-items-center w-2/4 justify-center items-center'>
@@ -115,20 +115,20 @@ function Index() {
         <h2 className='text-3xl italic text-center  '>Nuestras Asociaciones de Calidad: Marcas de Confianza en Nuestro Trabajo</h2>
         <div className='flex justify-content-around items-center flex-wrap'>
         <Carousel className='h-48 w-full flex justify-center items-center mt-20'>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item className='h-28 w-full object-contain' interval={1000}>
             <img className='h-28 w-full object-contain' src={hp} alt='HP' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
             <img className='h-28 w-full object-contain' src={samsung} alt='Samsung' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
             <img className='h-28 w-full object-contain' src={epsonsvg} alt='Epson' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
-            <img className='h-20 w-full object-contain' src={ricohsvg} alt='Ricoh' />
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
+            <img className='h-12 w-full object-contain' src={ricohsvg} alt='Ricoh' />
           </Carousel.Item>
-          <Carousel.Item interval={1200}>
-            <img className='h-20 w-full object-contain' src={brother} alt='Brother' />
+          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
+            <img className='h-12 w-full object-contain' src={brother} alt='Brother' />
           </Carousel.Item>
         </Carousel>
 

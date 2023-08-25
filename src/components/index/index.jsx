@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import React from 'react'
+import Slider from 'react-slick';
 import arrow from '../../assets/img/down-arrow.png'
 import brother from '../../assets/img/brother.svg'
 import contact from '../../assets/img/booking.png'
@@ -21,6 +23,8 @@ import sobre from '../../assets/img/people.png'
 import wsp from '../../assets/img/whatsapp.png'
 
 function Index() {
+
+    
 
   return (
     <div className='flex flex-col  w-full h-full '>
@@ -77,7 +81,7 @@ function Index() {
       {/* ---------------------------------SERVICIOS-------------------------------------------- */}
       <div className='flex flex-col w-full p-16 bg-slate-50 h-90'>
           <h2 className='text-3xl italic text-center mb-5  '>Nuestro Enfoque y Servicios</h2>
-          <div className='flex flex-row items-center justify-around gap-2 flex-wrap'>
+          <div className='flex flex-row items-center justify-around gap-2 flex-wrap tajetas'>
             <Link to=''>
               <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
                 <img src={servicioTecnico} className='h-20 w-21' />
@@ -114,23 +118,7 @@ function Index() {
       <div className='flex flex-col w-full p-16  h-90 flex-wrap'>
         <h2 className='text-3xl italic text-center  '>Nuestras Asociaciones de Calidad: Marcas de Confianza en Nuestro Trabajo</h2>
         <div className='flex justify-content-around items-center flex-wrap'>
-        <Carousel className='h-48 w-full flex justify-center items-center mt-20'>
-          <Carousel.Item className='h-28 w-full object-contain' interval={1000}>
-            <img className='h-28 w-full object-contain' src={hp} alt='HP' />
-          </Carousel.Item>
-          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
-            <img className='h-28 w-full object-contain' src={samsung} alt='Samsung' />
-          </Carousel.Item>
-          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
-            <img className='h-28 w-full object-contain' src={epsonsvg} alt='Epson' />
-          </Carousel.Item>
-          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
-            <img className='h-12 w-full object-contain' src={ricohsvg} alt='Ricoh' />
-          </Carousel.Item>
-          <Carousel.Item className='h-28 w-full object-contain' interval={1200}>
-            <img className='h-12 w-full object-contain' src={brother} alt='Brother' />
-          </Carousel.Item>
-        </Carousel>
+
 
         </div>
       </div>

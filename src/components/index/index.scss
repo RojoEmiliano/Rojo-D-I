@@ -5,6 +5,7 @@
     background-attachment: fixed;
     background-position-y:48% ;
     height: 78vh;
+    max-width: 100vw;
 }
 
 .text{
@@ -23,8 +24,8 @@
 }
 
 .buttonEpson{
-    background-color: #003399;
-    color: white;
+    color: #003399ea ;
+    border: 2px solid #003399ea;
     padding: .5rem;
     border-radius: .5rem;
     height: 20%;
@@ -32,19 +33,21 @@
     transition: all .4s;
     &:hover{
         background-color: #003399ea ;
+        color: white;
     }
 }
 
 .buttonRicoh{
-    background-color: #BF292F;
-    color: white;
+    color: #BF292F;
+    border: 2px solid #BF292F;
     padding: .5rem;
     border-radius: .5rem;
     height: 20%;
     width: auto;
     transition: all .4s;
     &:hover{
-        background-color: rgba(255, 0, 0, 0.699) ;
+        background-color: #BF292F;
+        color: white;
     }
 }
 
@@ -62,6 +65,25 @@
     }
     .ricoh{
         height:32rem
+    }
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+@media (min-width:1600px) and (max-width:1950px){
+    .epson{
+        height:40rem
+    }
+    .ricoh{
+        height:40rem
+    }
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
     }
 }
   

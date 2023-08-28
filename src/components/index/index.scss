@@ -1,5 +1,5 @@
 .index{
-    background-image: linear-gradient(rgba(129, 128, 128, 0.5), rgba(131, 128, 128, 0.5)), url('../../assets/img/oficinaEpson.jpg');
+    background-image: linear-gradient(rgba(69, 64, 64, 0.5), rgba(69, 64, 64, 0.5)), url('../../assets/img/oficinaEpson.jpg');
     background-size: cover;
     background-repeat: none;
     background-attachment: fixed;
@@ -31,6 +31,8 @@
     transition: all .4s;
     border: solid 2px #003399;
     &:hover{
+        background-color: #003399;
+        color: white;
     }
 }
 
@@ -42,6 +44,8 @@
     transition: all .4s;
     border: solid 2px #BF292F; 
     &:hover{
+        background-color: #BF292F;
+        color: white;
     }
 }
 
@@ -81,4 +85,37 @@
     }
 }
   
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: scroll 40s linear infinite;
+    width: calc(270px * 10);
+}
+
+.slider .slide{
+    width: 270px;
+    img{
+        width: 100%;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100%{
+        -webkit-transform: translateX(calc(-270px*5));
+        transform: translateX(-270px*5);
+    }
+}
 

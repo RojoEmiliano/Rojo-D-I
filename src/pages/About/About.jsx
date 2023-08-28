@@ -7,13 +7,11 @@ import './about.scss';
 const SobreNosotros = () => {
   return (
     <div className='bg-gray-100 relative'>
-      {/* <div className='bg-gray-100 absolute z-10 w-[200px] h-[500px]'></div> */}
       <div className='flex justify-center'>
-        <div className='sobreNosotros bg-no-repeat items-center max-w-[1520px] px-[35%] py-[16%] w-full'>
+        <div className='sobreNosotros bg-no-repeat flex justify-center px-[30%] py-[16%] w-full'>
           <h1 className='text-white bg-black/[.5] text-4xl w-fit p-6 rounded-lg text-center'>¿Quiénes Somos?</h1>
         </div>
       </div>
-      {/* <div className='bg-gray-100 absolute right-0 top-0 z-10 w-[200px] h-[500px]'></div> */}
       <div className='flex m-10 max-w-[100%] justify-center items-center'>
         <div className='flex justify-center max-w-[80%] flex-col'>
           <p>

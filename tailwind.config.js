@@ -18,7 +18,8 @@ export default {
         'lbMax': {'max': '1024px'},
       },
 			boxShadow: {
-				x: '0 -2px 16px -2px rgb(0 0 0 / 0.1)'
+				x: '0 -2px 16px -2px rgb(0 0 0 / 0.1)',
+				z: '0 4px 16px -2px rgb(0 0 0 / 0.1)',
 			}
 		},
 	},

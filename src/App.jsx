@@ -21,7 +21,7 @@ function App() {
           <Route path='/epson' element={<Epson />} />
           <Route path='/ricoh/detail/:modelCode' element={<ItemDetail />} />
           <Route path='/epson/detail/:modelCode' element={<ItemDetail />} />
-          <Route path='/nosotros' element={<About />} />
+          <Route path='/about' element={<About />} />
         </Routes>
         <Footer />
       </div>

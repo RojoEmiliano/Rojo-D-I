@@ -1,11 +1,14 @@
-.index{
-    background-image: linear-gradient(rgba(69, 64, 64, 0.5), rgba(69, 64, 64, 0.5)), url('../../assets/img/oficinaEpson.jpg');
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed;
-    background-position-y:48% ;
-    height: 78vh;
-    max-width: 100vw;
+.videoContainer{
+    width: max-content;
+    height: max-content;
+    background-color: black;
+
+}
+
+.video{
+
+    width: 100vh;
+    height: 88vh;
 }
 
 .text{

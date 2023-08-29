@@ -23,25 +23,31 @@ import wsp from "../../assets/img/whatsapp.png";
 function Index() {
   return (
     <div className="flex flex-col  w-full h-full ">
-      <div className="fixed icono right-0 bottom-0 m-3 icon">
-        <a href="https://wa.link/xj5bzq" target="_blank">
+      <div className="fixed icono right-0 bottom-0 m-3 icon z-40 w-[7vh]">
+        <a className="" href="https://wa.link/xj5bzq" target="_blank">
           <img src={wsp} alt="wsp" />
         </a>
       </div>
       {/* -------------------------PORTADA------------------------------------------------- */}
-      <div class="index flex flex-col text-center text-5xl italic justify-center gap-y-4 content-center w-full flex-wrap place-items-center bg-gray-800-to-r from-black">
-        <h2 class="font-normal mt-2 text-5xl text-white">
-          EXPERTOS EN DIGITALIZACIÓN E IMPRESIÓN
-        </h2>
+      <div className="videoContainer w-full ">
+        <div class="w-full h-full relative">
+          <video
+            className="video w-full"
+            src="/vid/vidIndex.mp4"
+            muted
+            autoPlay
+            loop
+          ></video>
 
-        <a href="#seccion1">
-          <div class="border-2 border-solid border-white-500 mt-3 rounded-full w-12 h-12 absolute cursor-pointer w-max relative animate-bounce">
-            <img src={arrow} alt="arrow" class="h-12 relative z-10" />
-          </div>
-        </a>
+<a href="#seccion1" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white">
+      <div className="border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white">
+        <img src={arrow} alt="arrow" className="h-12 relative z-10 text-white " />
+      </div>
+    </a>
+        </div>
       </div>
 
-      <div className="flex flex-col w-full p-16 bg-slate-50 h-90">
+      <div id="seccion1" className="flex flex-col w-full p-16 bg-slate-50 h-90">
         <h2 className="text-3xl italic text-center mb-5  ">
           Nuestro Enfoque y Servicios
         </h2>
@@ -57,7 +63,7 @@ function Index() {
             </div>
           </Link>
 
-          <Link to="/nosotros">
+          <Link to="/about">
             <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform">
               <img src={sobre} className="h-20 w-21" />
               <h3 className="text-xl font-semibold mt-2">Sobre Nosotros</h3>
@@ -80,7 +86,7 @@ function Index() {
         </div>
       </div>
 
-      <div id="seccion1" className="flex p-2 mt-4 items-center ">
+      <div  className="flex p-2 mt-4 items-center ">
         <div className="w-2/4">
           <img
             src={portadaepson}
@@ -134,49 +140,47 @@ function Index() {
         </div>
       </div>
       {/* ---------------------------------SERVICIOS-------------------------------------------- */}
-      
 
       {/* ---------------------------------MARCAS-------------------------------------------- */}
       <div className="flex flex-col w-full p-8  h-90 flex-wrap">
         <h2 className="text-3xl italic text-center  ">
           Marcas de Confianza en Nuestro Trabajo
         </h2>
-        
       </div>
       <div className="slider p-16">
-          <div className="slide-track">
-            <div className="slide">
-              <img src={epson} alt="epson" />
-            </div>
-            <div className="slide">
-              <img src={ricoh} alt="ricoh" />
-            </div>
-            <div className="slide">
-              <img src={samsung} alt="samsung" />
-            </div>
-            <div className="slide">
-              <img src={brother} alt="brother" />
-            </div>
-            <div className="slide">
-              <img src={hp} alt="hp" />
-            </div>
-            <div className="slide">
-              <img src={epson} alt="epson" />
-            </div>
-            <div className="slide">
-              <img src={ricoh} alt="ricoh" />
-            </div>
-            <div className="slide">
-              <img src={samsung} alt="samsung" />
-            </div>
-            <div className="slide">
-              <img src={brother} alt="brother" />
-            </div>
-            <div className="slide">
-              <img src={hp} alt="hp" />
-            </div>
+        <div className="slide-track">
+          <div className="slide">
+            <img src={epson} alt="epson" />
+          </div>
+          <div className="slide">
+            <img src={ricoh} alt="ricoh" />
+          </div>
+          <div className="slide">
+            <img src={samsung} alt="samsung" />
+          </div>
+          <div className="slide">
+            <img src={brother} alt="brother" />
+          </div>
+          <div className="slide">
+            <img src={hp} alt="hp" />
+          </div>
+          <div className="slide">
+            <img src={epson} alt="epson" />
+          </div>
+          <div className="slide">
+            <img src={ricoh} alt="ricoh" />
+          </div>
+          <div className="slide">
+            <img src={samsung} alt="samsung" />
+          </div>
+          <div className="slide">
+            <img src={brother} alt="brother" />
+          </div>
+          <div className="slide">
+            <img src={hp} alt="hp" />
           </div>
         </div>
+      </div>
     </div>
   );
 }

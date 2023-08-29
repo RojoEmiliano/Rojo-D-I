@@ -142,7 +142,7 @@ function Index() {
       {/* ---------------------------------SERVICIOS-------------------------------------------- */}
 
       {/* ---------------------------------MARCAS-------------------------------------------- */}
-      <div className="flex flex-col w-full p-8  h-90 flex-wrap">
+      <div className="flex flex-col w-full pt-8  h-90 flex-wrap">
         <h2 className="text-3xl italic text-center  ">
           Marcas de Confianza en Nuestro Trabajo
         </h2>

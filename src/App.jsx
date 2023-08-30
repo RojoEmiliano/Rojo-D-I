@@ -9,6 +9,7 @@ import './App.css';
 import Ricoh from './pages/ricoh';
 import ItemDetail from './pages/ItemDetail/ItemDetail';
 import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
@@ -62,6 +63,14 @@ function App() {
             element={
               <ScrollToTop>
                 <About />
+              </ScrollToTop>
+            }
+          />
+          <Route
+            path='/contact'
+            element={
+              <ScrollToTop>
+                <Contact />
               </ScrollToTop>
             }
           />

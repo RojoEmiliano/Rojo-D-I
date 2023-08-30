@@ -9,6 +9,7 @@ import './App.css';
 import Ricoh from './pages/ricoh';
 import ItemDetail from './pages/ItemDetail/ItemDetail';
 import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/ricoh/detail/:modelCode' element={<ItemDetail />} />
           <Route path='/epson/detail/:modelCode' element={<ItemDetail />} />
           <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
       </div>

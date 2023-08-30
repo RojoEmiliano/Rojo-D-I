@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const ShowMoreButton = ({ theme, modelCode, brand }) => {
-  console.log(theme);
   return (
     <Link
       to={`/${brand}/detail/${modelCode}`}

@@ -1,7 +1,8 @@
 export const themes = {
 	epson: "epson",
 	ricoh: "ricoh",
-	inicio: "inicio",
+	inicio: "",
 	about: "about",
 	contact: "contact",
+	services: "services",
 };

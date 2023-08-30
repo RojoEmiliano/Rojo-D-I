@@ -1,140 +1,124 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Carousel from "react-bootstrap/Carousel";
-import { Link } from "react-router-dom";
-import React from "react";
-import arrow from "../../assets/img/down-arrow.png";
-import brother from "../../assets/img/brother.svg";
-import contact from "../../assets/img/booking.png";
-import epson from "../../assets/img/epson.jpg";
-import epsonsvg from "../../assets/img/epson.svg";
-import hp from "../../assets/img/hp.svg";
-import portadaepson from "../../assets/img/portadaepson.jpg";
-import portadaricoh from "../../assets/img/portadaricoh.jpg";
-import ricoh from "../../assets/img/ricoh.jpg";
-import ricohsvg from "../../assets/img/ricoh.svg";
-import samsung from "../../assets/img/samsung.svg";
-import servicioTecnico from "../../assets/img/customer-support.png";
-import sobre from "../../assets/img/people.png";
-import wsp from "../../assets/img/whatsapp.png";
+import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import arrow from '../../assets/img/down-arrow.png';
+import brother from '../../assets/img/brother.svg';
+import contact from '../../assets/img/booking.png';
+import epson from '../../assets/img/epson.jpg';
+import epsonsvg from '../../assets/img/epson.svg';
+import hp from '../../assets/img/hp.svg';
+import portadaepson from '../../assets/img/portadaepson.jpg';
+import portadaricoh from '../../assets/img/portadaricoh.jpg';
+import ricoh from '../../assets/img/ricoh.jpg';
+import ricohsvg from '../../assets/img/ricoh.svg';
+import samsung from '../../assets/img/samsung.svg';
+import servicioTecnico from '../../assets/img/customer-support.png';
+import sobre from '../../assets/img/people.png';
+import wsp from '../../assets/img/whatsapp.png';
 
 function Index() {
   return (
-    <div className="flex flex-col  w-full h-full ">
-      <div className="fixed icono right-0 bottom-0 m-3 icon z-40 w-[7vh]">
-        <a className="" href="https://wa.link/xj5bzq" target="_blank">
-          <img src={wsp} alt="wsp" />
+    <div className='flex flex-col w-full h-full '>
+      <div className='fixed icono right-4 bottom-2 icon z-40 w-[7vh]'>
+        <a className='' href='https://wa.link/xj5bzq' target='_blank'>
+          <img src={wsp} alt='wsp' />
         </a>
       </div>
       {/* -------------------------PORTADA------------------------------------------------- */}
-      <div className="videoContainer w-full ">
-        <div class="w-full h-full relative">
-          <video
-            className="video w-full"
-            src="/vid/vidIndex.mp4"
-            muted
-            autoPlay
-            loop
-          ></video>
+      <div className='videoContainer w-full '>
+        <div className='w-full h-full relative'>
+          <video className='video w-full' src='/vid/vidIndex.mp4' muted autoPlay loop></video>
 
-<a href="#seccion1" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white">
-      <div className="border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white">
-        <img src={arrow} alt="arrow" className="h-12 relative z-10 text-white " />
-      </div>
-    </a>
+          <a
+            href='#seccion1'
+            className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'
+          >
+            <div className='border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white'>
+              <img src={arrow} alt='arrow' className='h-12 relative z-10 text-white ' />
+            </div>
+          </a>
         </div>
       </div>
 
-      <div id="seccion1" className="flex flex-col w-full p-16 bg-slate-50 h-90">
-        <h2 className="text-3xl italic text-center mb-5  ">
-          Nuestro Enfoque y Servicios
-        </h2>
-        <div className="flex flex-row items-center justify-around gap-2 flex-wrap tajetas">
-          <Link to="">
-            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform">
-              <img src={servicioTecnico} className="h-20 w-21" />
-              <h3 className="text-xl font-semibold mt-2">Servicio Técnico</h3>
-              <p className="text-xl text-gray-500 mt-1 w-96">
-                Expertos en resolver problemas y mantener tus dispositivos en
-                óptimas condiciones.
+      <div id='seccion1' className='flex flex-col w-full p-16 bg-slate-50 h-90'>
+        <h2 className='text-3xl italic text-center mb-5'>Nuestro Enfoque y Servicios</h2>
+        <div className='flex flex-row items-center justify-around gap-2 flex-wrap tajetas'>
+          <Link to=''>
+            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
+              <img src={servicioTecnico} className='h-20 w-21' />
+              <h3 className='text-xl font-semibold mt-2'>Servicio Técnico</h3>
+              <p className='text-xl text-gray-500 mt-1 w-96'>
+                Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.
               </p>
             </div>
           </Link>
 
-          <Link to="/about">
-            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform">
-              <img src={sobre} className="h-20 w-21" />
-              <h3 className="text-xl font-semibold mt-2">Sobre Nosotros</h3>
-              <p className="text-xl text-gray-500 mt-1 w-96">
+          <Link to='/about'>
+            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
+              <img src={sobre} className='h-20 w-21' />
+              <h3 className='text-xl font-semibold mt-2'>Sobre Nosotros</h3>
+              <p className='text-xl text-gray-500 mt-1 w-96'>
                 Conoce nuestra historia y los valores que nos impulsan en Rojo.
               </p>
             </div>
           </Link>
 
-          <Link to="">
-            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform mt-2">
-              <img src={contact} className="h-20 w-21" />
-              <h3 className="text-xl font-semibold mt-2">Contáctanos</h3>
-              <p className="text-xl text-gray-500 mt-1 w-96">
-                ¿Tienes preguntas o necesitas asistencia? Estamos aquí para
-                ayudarte.
+          <Link to=''>
+            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform mt-2'>
+              <img src={contact} className='h-20 w-21' />
+              <h3 className='text-xl font-semibold mt-2'>Contáctanos</h3>
+              <p className='text-xl text-gray-500 mt-1 w-96'>
+                ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.
               </p>
             </div>
           </Link>
         </div>
       </div>
 
-      <div  className="flex p-2 mt-4 items-center ">
-        <div className="w-2/4">
-          <img
-            src={portadaepson}
-            className="rounded-lg drop-shadow-2xl epson"
-          />
+      <div className='flex p-2 mt-4 items-center '>
+        <div className='w-2/4'>
+          <img src={portadaepson} className='rounded-lg drop-shadow-2xl epson' />
         </div>
-
-        <div className="place-items-center w-2/4 justify-center items-center">
-          <div className="flex flex-col items-center">
-            <img src={epson} className="w-40  " />
+        <div className='place-items-center w-2/4 justify-center items-center'>
+          <div className='flex flex-col items-center'>
+            <img src={epson} className='w-40' />
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <p className="p-6 text-xl">
-              Epson es una reconocida marca global en tecnología de impresión,
-              conocida por su compromiso con la innovación y la calidad en el
-              mundo de las impresoras y las tintas. Con décadas de experiencia,
-              Epson se ha destacado por ofrecer soluciones de impresión de alta
-              calidad para hogares y empresas.
+          <div className='flex flex-col items-center justify-center'>
+            <p className='p-6 text-xl'>
+              Epson es una reconocida marca global en tecnología de impresión, conocida por su
+              compromiso con la innovación y la calidad en el mundo de las impresoras y las tintas.
+              Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión
+              de alta calidad para hogares y empresas.
             </p>
-            <Link to="/epson">
-              <button className="buttonEpson">VER PRODUCTOS</button>
+            <Link to='/epson'>
+              <button className='buttonEpson'>VER PRODUCTOS</button>
             </Link>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-row-reverse p-2 items-center ">
-        <div className="w-2/4">
-          <img
-            src={portadaricoh}
-            className="rounded-lg drop-shadow-2xl ricoh"
-          />
+      <div className='flex flex-row-reverse p-2 items-center '>
+        <div className='w-2/4'>
+          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl ricoh' />
         </div>
 
-        <div className="place-items-center w-2/4 justify-center items-center">
-          <div className="flex flex-col items-center">
-            <img src={ricoh} className="w-40" />
+        <div className='place-items-center w-2/4 justify-center items-center'>
+          <div className='flex flex-col items-center'>
+            <img src={ricoh} className='w-40' />
           </div>
-          <div className="flex flex-col items-center">
-            <p className="p-6 text-xl">
-              Ricoh es una destacada empresa global en tecnología de impresión y
-              soluciones de oficina. Reconocida por su enfoque en la innovación
-              y la eficiencia, Ricoh ofrece una amplia gama de impresoras y
-              tintas diseñadas para satisfacer las necesidades tanto de empresas
-              como de usuarios individuales.
+          <div className='flex flex-col items-center'>
+            <p className='p-6 text-xl'>
+              Ricoh es una destacada empresa global en tecnología de impresión y soluciones de
+              oficina. Reconocida por su enfoque en la innovación y la eficiencia, Ricoh ofrece una
+              amplia gama de impresoras y tintas diseñadas para satisfacer las necesidades tanto de
+              empresas como de usuarios individuales.
             </p>
-            <Link to="/ricoh">
-              <button className="buttonRicoh">VER PRODUCTOS</button>
+            <Link to='/ricoh'>
+              <button className='buttonRicoh'>VER PRODUCTOS</button>
             </Link>
           </div>
         </div>
@@ -142,42 +126,40 @@ function Index() {
       {/* ---------------------------------SERVICIOS-------------------------------------------- */}
 
       {/* ---------------------------------MARCAS-------------------------------------------- */}
-      <div className="flex flex-col w-full pt-8  h-90 flex-wrap">
-        <h2 className="text-3xl italic text-center  ">
-          Marcas de Confianza en Nuestro Trabajo
-        </h2>
+      <div className='flex flex-col w-full pt-8  h-90 flex-wrap'>
+        <h2 className='text-3xl italic text-center  '>Marcas de Confianza en Nuestro Trabajo</h2>
       </div>
-      <div className="slider p-16">
-        <div className="slide-track">
-          <div className="slide">
-            <img src={epson} alt="epson" />
+      <div className='slider p-16'>
+        <div className='slide-track'>
+          <div className='slide'>
+            <img src={epson} alt='epson' />
           </div>
-          <div className="slide">
-            <img src={ricoh} alt="ricoh" />
+          <div className='slide'>
+            <img src={ricoh} alt='ricoh' />
           </div>
-          <div className="slide">
-            <img src={samsung} alt="samsung" />
+          <div className='slide'>
+            <img src={samsung} alt='samsung' />
           </div>
-          <div className="slide">
-            <img src={brother} alt="brother" />
+          <div className='slide'>
+            <img src={brother} alt='brother' />
           </div>
-          <div className="slide">
-            <img src={hp} alt="hp" />
+          <div className='slide'>
+            <img src={hp} alt='hp' />
           </div>
-          <div className="slide">
-            <img src={epson} alt="epson" />
+          <div className='slide'>
+            <img src={epson} alt='epson' />
           </div>
-          <div className="slide">
-            <img src={ricoh} alt="ricoh" />
+          <div className='slide'>
+            <img src={ricoh} alt='ricoh' />
           </div>
-          <div className="slide">
-            <img src={samsung} alt="samsung" />
+          <div className='slide'>
+            <img src={samsung} alt='samsung' />
           </div>
-          <div className="slide">
-            <img src={brother} alt="brother" />
+          <div className='slide'>
+            <img src={brother} alt='brother' />
           </div>
-          <div className="slide">
-            <img src={hp} alt="hp" />
+          <div className='slide'>
+            <img src={hp} alt='hp' />
           </div>
         </div>
       </div>

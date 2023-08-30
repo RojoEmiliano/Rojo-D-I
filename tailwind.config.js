@@ -19,6 +19,7 @@ export default {
       },
 			boxShadow: {
 				x: '0 -2px 16px -2px rgb(0 0 0 / 0.1)',
+				y: '-3px 5px 20px 8px rgba(0, 0, 0, 0.3)',
 				z: '0 4px 16px -2px rgb(0 0 0 / 0.1)',
 			}
 		},

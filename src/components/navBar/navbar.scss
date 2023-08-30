@@ -67,7 +67,30 @@
   border-bottom: 2px solid transparent;
   border-right: 2px solid transparent;
   border-color: rgba(0, 0, 0, 0.6);
-  //   bottom: 40px;
+}
+
+.current::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #bf292f, rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+.current:hover::before {
+  opacity: 1;
+}
+.current {
+  color: rgb(255, 255, 255);
+  background-color: #bf292f;
+  transition: all 0.4s ease;
+}
+.current:hover {
+  background-color: transparent;
 }
 
 .navbar {
@@ -83,7 +106,6 @@
 }
 
 .shrunk {
-  // transition: height 0.4s ease;
   height: 70px;
   img {
     width: 150px;

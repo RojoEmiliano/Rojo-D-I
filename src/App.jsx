@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Index from './components/index';
+import Index from './pages/index';
 import Footer from './components/footer/footer';
 import NavBar from './components/NavBar/NavBar';
 import Epson from './pages/epson/epson';

@@ -19,76 +19,67 @@ import samsung from '../../assets/img/samsung.svg';
 import servicioTecnico from '../../assets/img/customer-support.png';
 import sobre from '../../assets/img/people.png';
 import wsp from '../../assets/img/whatsapp.png';
+import IndexCard from '../../components/IndexCard/IndexCard';
 
 function Index() {
   return (
-    <div className='flex flex-col w-full h-full '>
+    <div className='flex flex-col w-full h-full'>
       <div className='fixed icono right-4 bottom-2 icon z-40 w-[7vh]'>
         <a className='' href='https://wa.link/xj5bzq' target='_blank'>
           <img src={wsp} alt='wsp' />
         </a>
       </div>
       {/* -------------------------PORTADA------------------------------------------------- */}
-      <div className='videoContainer w-full '>
+      <div className='videoContainer w-full'>
         <div className='w-full h-full relative'>
           <video className='video w-full' src='/vid/vidIndex.mp4' muted autoPlay loop></video>
-
           <a
             href='#seccion1'
             className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'
           >
-            <div className='border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white'>
+            <div className='lbMax:hidden border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white'>
               <img src={arrow} alt='arrow' className='h-12 relative z-10 text-white ' />
             </div>
           </a>
         </div>
       </div>
-
-      <div id='seccion1' className='flex flex-col w-full p-16 bg-slate-50 h-90'>
-        <h2 className='text-3xl italic text-center mb-5'>Nuestro Enfoque y Servicios</h2>
-        <div className='flex flex-row items-center justify-around gap-2 flex-wrap tajetas'>
-          <Link to=''>
-            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-              <img src={servicioTecnico} className='h-20 w-21' />
-              <h3 className='text-xl font-semibold mt-2'>Servicio Técnico</h3>
-              <p className='text-xl text-gray-500 mt-1 w-96'>
-                Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.
-              </p>
-            </div>
-          </Link>
-
-          <Link to='/about'>
-            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform'>
-              <img src={sobre} className='h-20 w-21' />
-              <h3 className='text-xl font-semibold mt-2'>Sobre Nosotros</h3>
-              <p className='text-xl text-gray-500 mt-1 w-96'>
-                Conoce nuestra historia y los valores que nos impulsan en Rojo.
-              </p>
-            </div>
-          </Link>
-
-          <Link to=''>
-            <div className='flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transform hover:-translate-y-2 transition-transform mt-2'>
-              <img src={contact} className='h-20 w-21' />
-              <h3 className='text-xl font-semibold mt-2'>Contáctanos</h3>
-              <p className='text-xl text-gray-500 mt-1 w-96'>
-                ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.
-              </p>
-            </div>
-          </Link>
+      {/* ---------------------------------SERVICIOS-------------------------------------------- */}
+      <div id='seccion1' className='flex flex-col w-full p-8 mb:p-16 bg-slate-50 h-90'>
+        <h2 className='lb:text-3xl text-xl italic text-center mb-5'>Nuestro Enfoque y Servicios</h2>
+        <div className='flex items-center justify-around gap-4 flex-wrap w-full'>
+          <IndexCard
+            link='/services'
+            img={servicioTecnico}
+            title='Servicio Técnico'
+            text='Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.'
+          />
+          <IndexCard
+            link='/about'
+            img={sobre}
+            title='Sobre Nosotros'
+            text='Conoce nuestra historia y los valores que nos impulsan en Rojo.'
+          />
+          <IndexCard
+            link='/contact'
+            img={contact}
+            title='Contáctanos'
+            text='¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.'
+          />
         </div>
       </div>
-
-      <div className='flex p-2 mt-4 items-center '>
-        <div className='w-2/4'>
-          <img src={portadaepson} className='rounded-lg drop-shadow-2xl epson' />
+      <div className='flex lbMax:py-8 lbMax:px-5 lb:p-2 items-center lbMax:flex-col'>
+        <div className='flex flex-col items-center lb:hidden mb-4'>
+          <img src={epson} className='w-40' />
         </div>
-        <div className='place-items-center w-2/4 justify-center items-center'>
-          <div className='flex flex-col items-center'>
+        <div className='lb:w-1/2'>
+          <img src={portadaepson} className='rounded-lg drop-shadow-2xl w-full' />
+        </div>
+        <div className='place-items-center lb:w-1/2 justify-center items-center'>
+          <div className='flex flex-col items-center lbMax:hidden'>
             <img src={epson} className='w-40' />
           </div>
           <div className='flex flex-col items-center justify-center'>
-            <p className='p-6 text-xl'>
+            <p className='p-6 lb:px-20 text-lg mb:text-xl text-justify max-w-[690px]'>
               Epson es una reconocida marca global en tecnología de impresión, conocida por su
               compromiso con la innovación y la calidad en el mundo de las impresoras y las tintas.
               Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión
@@ -100,18 +91,19 @@ function Index() {
           </div>
         </div>
       </div>
-
-      <div className='flex flex-row-reverse p-2 items-center '>
-        <div className='w-2/4'>
-          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl ricoh' />
+      <div className='flex lb:flex-row-reverse lbMax:py-8 lbMax:px-5 lb:p-2 items-center lbMax:flex-col'>
+        <div className='flex flex-col items-center lb:hidden mb-4'>
+          <img src={ricoh} className='w-40' />
         </div>
-
-        <div className='place-items-center w-2/4 justify-center items-center'>
-          <div className='flex flex-col items-center'>
+        <div className='lb:w-1/2 lbMax:max-w-[690px]'>
+          <img src={portadaricoh} className='rounded-lg drop-shadow-2xl' />
+        </div>
+        <div className='place-items-center lb:w-1/2 justify-center items-center'>
+          <div className='flex flex-col items-center lbMax:hidden'>
             <img src={ricoh} className='w-40' />
           </div>
-          <div className='flex flex-col items-center'>
-            <p className='p-6 text-xl'>
+          <div className='flex flex-col items-center justify-center'>
+            <p className='p-6 lb:px-20 text-lg mb:text-xl text-justify max-w-[690px]'>
               Ricoh es una destacada empresa global en tecnología de impresión y soluciones de
               oficina. Reconocida por su enfoque en la innovación y la eficiencia, Ricoh ofrece una
               amplia gama de impresoras y tintas diseñadas para satisfacer las necesidades tanto de
@@ -123,13 +115,13 @@ function Index() {
           </div>
         </div>
       </div>
-      {/* ---------------------------------SERVICIOS-------------------------------------------- */}
-
       {/* ---------------------------------MARCAS-------------------------------------------- */}
       <div className='flex flex-col w-full pt-8  h-90 flex-wrap'>
-        <h2 className='text-3xl italic text-center  '>Marcas de Confianza en Nuestro Trabajo</h2>
+        <h2 className='lb:text-3xl text-xl italic text-center'>
+          Marcas de Confianza en Nuestro Trabajo
+        </h2>
       </div>
-      <div className='slider p-16'>
+      <div className='slider my-4'>
         <div className='slide-track'>
           <div className='slide'>
             <img src={epson} alt='epson' />
@@ -143,7 +135,7 @@ function Index() {
           <div className='slide'>
             <img src={brother} alt='brother' />
           </div>
-          <div className='slide'>
+          <div className='slide !w-[200px]'>
             <img src={hp} alt='hp' />
           </div>
           <div className='slide'>
@@ -158,7 +150,7 @@ function Index() {
           <div className='slide'>
             <img src={brother} alt='brother' />
           </div>
-          <div className='slide'>
+          <div className='slide !w-[200px]'>
             <img src={hp} alt='hp' />
           </div>
         </div>

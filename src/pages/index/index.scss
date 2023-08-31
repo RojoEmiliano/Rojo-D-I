@@ -2,7 +2,6 @@
     width: max-content;
     height: max-content;
     background-color: black;
-
 }
 
 .video{
@@ -57,34 +56,6 @@
     &:hover{
         transform: scale(1.1);
         cursor: pointer;
-    }
-}
-
-@media (min-width:1390px) and (max-width:1600px){
-    .epson{
-        height:32rem
-    }
-    .ricoh{
-        height:32rem
-    }
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-    }
-}
-
-@media (min-width:1600px) and (max-width:2000px){
-    .epson{
-        height:40rem
-    }
-    .ricoh{
-        height:40rem
-    }
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
     }
 }
   

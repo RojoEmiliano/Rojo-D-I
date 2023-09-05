@@ -32,7 +32,7 @@ function Index() {
       {/* -------------------------PORTADA------------------------------------------------- */}
       <div className='videoContainer w-full'>
         <div className='w-full h-full relative'>
-          <video className='video w-full' src='/vid/vidIndex.mp4' muted autoPlay loop></video>
+          <video className='video w-full' src='/vid/vidIndex.mkv' muted autoPlay loop></video>
           <a
             href='#seccion1'
             className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'

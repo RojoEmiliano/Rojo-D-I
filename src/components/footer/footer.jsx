@@ -1,12 +1,15 @@
 import React from 'react';
-import './footer.scss';
 import { FaWhatsapp, FaMailBulk, FaMapMarkerAlt } from 'react-icons/fa';
-import logoindex from '../../assets/img/logoindex.jpg';
-import useMediaQuery from '../../hooks/useMediaQuery';
 
-function Footer() {
+import logoindex from '../../assets/img/logoindex.jpg';
+
+function Footer({ loading }) {
   return (
-    <footer className={`flex flex-col w-full px-10 pt-2.5 lb:h-[210px]`}>
+    <footer
+      className={`flex flex-col w-full px-10 pt-2.5 lb:h-[210px] ${
+        loading ? 'absolute' : 'static'
+      } bottom-0`}
+    >
       <div className='flex lbMax:flex-col-reverse w-full justify-between items-center'>
         <img src={logoindex} alt='Logo' className='lbMax:hidden w-1/4 max-w-[300px]' />
         <div className='copy lbMax:w-full lb:w-1/4 h-full mbMax:hidden'>

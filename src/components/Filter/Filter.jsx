@@ -13,6 +13,7 @@ import {
 
 import FilterCheckbox from '../../commons/FilterCheckbox/FilterCheckbox';
 import './filter.scss';
+import { themes } from '../../utils/themes';
 
 const Filter = ({ checkboxOnChange, theme, filter }) => {
   return (
@@ -23,7 +24,7 @@ const Filter = ({ checkboxOnChange, theme, filter }) => {
         <div
           className={`absolute -right-[46px] -top-3.5 z-10 py-1.5 px-2.5 bg-gray-300 rounded-tr-md`}
         >
-          <FontAwesomeIcon icon={faChevronRight} size='lg' />
+          <FontAwesomeIcon icon={faChevronRight} size='lg' className={theme === themes.epson ? 'text-epson' : 'text-ricoh'} />
         </div>
         <div
           className={`absolute flex flex-col justify-evenly items-center px-[11.5px] py-1.5 h-[149px] 

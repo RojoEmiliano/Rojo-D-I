@@ -1,23 +1,34 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 
 import './listItems.scss';
 
 import SliderComponent from '../Slider/Slider';
 import ShowMoreButton from '../../commons/ShowMoreButton/ShowMoreButton';
 import { useFilter } from '../../hooks/useFilter';
+import { themes } from '../../utils/themes';
 
-const ListItems = ({ theme, products, setProducts, data }) => {
+const ListItems = ({ theme, products, setProducts, data, loading }) => {
   const { Filter } = useFilter({ data, setState: setProducts, theme: theme });
 
   return (
-    <div className='w-full lb:px-8 px-2 pb-[130px] flex flex-col items-center bg-slate-50'>
+    <div className='w-full lb:px-8 px-2 pb-[130px] flex flex-col items-center bg-slate-50 min-h-[65vh]'>
       <div className='flex items-center justify-center bg-slate-50'>
         <img
           src={`/${theme}/img/logo/${theme}.svg`}
           className='py-10 max-w-[200px] max-h-[200px] flex justify-center items-center'
         />
       </div>
-      <div className='max-w-[1600px] w-full bg-white rounded-md shadow-x'>
+      {loading && (
+        <div className='flex justify-center'>
+          <Spinner animation='border' variant={theme === themes.epson ? 'primary' : 'danger'} />
+        </div>
+      )}
+      <div
+        className={`max-w-[1600px] w-full bg-white rounded-md shadow-x itemsList ${
+          loading ? 'opacity-0' : 'opacity-100'
+        }`}
+      >
         {Filter}
         <div className={`flex mbMax:flex-col mbMax:items-center mb:flex-wrap mb:justify-evenly`}>
           {products.map(product => (

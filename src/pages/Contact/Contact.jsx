@@ -52,19 +52,19 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-16">
+    <div className="bg-gray-100 p-6 md:p-16">
       <div className="flex justify-center p-6 bg-white">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="flex gap-6 bg-gray-200">
-        <div className="w-1/2">
+      <div className="flex flex-col md:flex-row gap-6 bg-gray-200">
+        <div className="md:w-1/2">
           <h2 className="text-center text-3xl pt-4">
             ¿POR QUÉ DEBERIAMOS CONTACTARTE?
           </h2>
 
-          <div className="flex flex-col justify-center p-10 bg-gray-200 items-center ">
+          <div className="flex flex-col justify-center p-6 md:p-10 bg-gray-200 items-center">
             <form
-              className="w-100 p-10 bg-white rounded-md shadow-md"
+              className="w-full p-6 md:p-10 bg-white rounded-md shadow-md"
               onSubmit={sendEmail}
               ref={form}
             >
@@ -137,10 +137,10 @@ export const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <h3 className="text-center pt-4 text-3xl">CONTÁCTANOS</h3>
-          <div className="flex flex-col  p-10 bg-gray-200   ">
-            <div className="w-100 p-10 bg-white rounded-md shadow-md flex flex-col items-center justify-evenly h-[574px]">
+          <div className="flex flex-col p-6 md:p-10 bg-gray-200 " >
+            <div className="w-full p-6 md:p-10 bg-white rounded-md shadow-md flex flex-col items-center justify-evenly h-[574px]">
               <div className="w-fit flex flex-col justify-evenly h-full">
                 <div className="flex items-center p-1">
                   <BsPinMapFill className="text-ricoh text-3xl" />
@@ -172,9 +172,9 @@ export const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-center text-center p-10 bg-gray-200">
+      <div className="flex justify-center text-center p-6 md:p-10 bg-gray-200">
         <iframe
-          className="w-[100%] h-[450px]"
+          className="w-full h-[450px]"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.0662487474433!2d-68.85695332344865!3d-32.92284787068863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b36114341dd%3A0xedea275072ef2128!2sRojo%20Digitalizaci%C3%B3n%20e%20impresi%C3%B3n.!5e0!3m2!1ses-419!2sar!4v1693411712530!5m2!1ses-419!2sar"
           allowfullscreen=""
           loading="lazy"

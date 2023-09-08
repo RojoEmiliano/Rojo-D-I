@@ -12,6 +12,7 @@ import ItemDetail from './pages/ItemDetail/ItemDetail';
 import About from './pages/About/About';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Contact from './pages/Contact/Contact';
+import { Services } from './pages/Services/Services';
 
 function App() {
   return (
@@ -64,6 +65,14 @@ function App() {
             element={
               <ScrollToTop>
                 <About />
+              </ScrollToTop>
+            }
+          />
+                    <Route
+            path='/services'
+            element={
+              <ScrollToTop>
+                <Services/>
               </ScrollToTop>
             }
           />

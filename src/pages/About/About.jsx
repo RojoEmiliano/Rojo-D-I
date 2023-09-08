@@ -9,7 +9,7 @@ const SobreNosotros = () => {
   return (
     <div className='bg-gray-100 relative'>
       <div className='flex justify-center'>
-        <div className='sobreNosotros bg-no-repeat flex justify-center px-[30%] py-[16%] w-full'>
+        <div className='sobreNosotros bg-no-repeat flex justify-center px-[30%] py-[13%] w-full'>
           <h1 className='text-white bg-black/[.5] text-lg mb:text-2xl lb:text-4xl w-fit sbMax:p-3 p-6 rounded-lg text-center'>
             ¿Quiénes Somos?
           </h1>

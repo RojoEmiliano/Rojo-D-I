@@ -10,7 +10,6 @@ import { useState } from "react";
 
 export const Contact = () => {
   const form = useRef();
-
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",

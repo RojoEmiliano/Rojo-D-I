@@ -46,14 +46,14 @@ export const Services = () => {
           href="./contact"
         >
           Formulario
-          <FaWpforms />
+          <FaWpforms className="ml-1" />
         </a>
         <a
           className="flex items-center justify-center bg-ricoh hover:bg-ricohHover px-4 py-2 m-2 text-white rounded-lg focus:outline-none transition-colors "
           href="https://wa.link/xj5bzq"
         >
           Whatsapp
-          <FaWhatsapp />
+          <FaWhatsapp className="ml-1" />
         </a>
       </div>
       <hr />

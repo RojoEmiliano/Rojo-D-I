@@ -17,6 +17,7 @@ export const Contact = () => {
     message: "",
   });
 
+  
   const sendEmail = (e) => {
     e.preventDefault();
 

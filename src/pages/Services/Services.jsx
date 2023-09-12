@@ -11,7 +11,7 @@ export const Services = () => {
   return (
     <div className="">
       <div className="services bg-no-repeat flex justify-center px-[30%] py-[13%] w-full">
-        <h1 className="text-white bg-black/[.5] text-lg mb:text-2xl lb:text-4xl w-fit sbMax:p-3 p-6 rounded-lg text-center">
+        <h1 className="text-white bg-black/[.5] text-lg mb:text-xl lb:text-4xl w-fit sbMax:p-3 p-6 rounded-lg text-center">
           Servicio Técnico
         </h1>
       </div>

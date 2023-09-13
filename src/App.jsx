@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 
 import './App.css';
 
@@ -16,7 +16,7 @@ import { Services } from './pages/Services/Services';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='min-h-screen relative'>
         <NavBar />
         <Routes>
@@ -87,7 +87,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

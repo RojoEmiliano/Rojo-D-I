@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, { useRef } from 'react';
 import arrow from '../../assets/img/down-arrow.png';
 import brother from '../../assets/img/brother.svg';
 import contact from '../../assets/img/booking.png';
@@ -22,6 +22,10 @@ import wsp from '../../assets/img/whatsapp.png';
 import IndexCard from '../../components/IndexCard/IndexCard';
 
 function Index() {
+  const seccion = useRef()
+  const scrollToSeccion = () => {
+    seccion.current.scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <div className='flex flex-col w-full h-full'>
       <div className='fixed icono right-4 bottom-2 icon z-40 w-[7vh]'>
@@ -32,19 +36,19 @@ function Index() {
       {/* -------------------------PORTADA------------------------------------------------- */}
       <div className='videoContainer w-full'>
         <div className='w-full h-full relative'>
-          <video className='video w-full' src='/vid/vidIndex.mkv' muted autoPlay loop></video>
-          <a
-            href='#seccion1'
+          <video className='video w-full' src='/vid/vidIndex.mp4' muted autoPlay loop></video>
+          <button
+            onClick={scrollToSeccion}
             className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'
           >
             <div className='lbMax:hidden border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white'>
               <img src={arrow} alt='arrow' className='h-12 relative z-10 text-white ' />
             </div>
-          </a>
+          </button>
         </div>
       </div>
       {/* ---------------------------------SERVICIOS-------------------------------------------- */}
-      <div id='seccion1' className='flex flex-col w-full p-8 mb:p-16 bg-slate-50 h-90'>
+      <div ref={seccion} className='flex flex-col w-full p-8 mb:p-16 bg-slate-50 h-90'>
         <h2 className='lb:text-3xl text-xl italic text-center mb-5'>Nuestro Enfoque y Servicios</h2>
         <div className='flex items-center justify-around gap-4 flex-wrap w-full'>
           <IndexCard

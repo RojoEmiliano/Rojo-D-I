@@ -33,11 +33,60 @@ function Index() {
   return (
     <>
       <HelmetCommon title='ROJO D-I' />
-      <div className='flex flex-col w-full h-full'>
-        <div className='fixed icono right-4 bottom-2 icon z-40 w-[7vh]'>
-          <a className='' href='https://wa.link/xj5bzq' target='_blank'>
-            <img src={wsp} alt='wsp' />
-          </a>
+    <div className='flex flex-col w-full h-full'>
+      <div className='fixed icono right-4 bottom-2 icon z-40 w-[7vh]'>
+        <a className='' href='https://wa.link/xj5bzq' target='_blank'>
+          <img src={wsp} alt='wsp' />
+        </a>
+      </div>
+      {/* -------------------------PORTADA------------------------------------------------- */}
+      <div className='videoContainer w-full'>
+        <div className='w-full h-full relative'>
+          <video
+            className='video w-full'
+            autoplay='autoplay'
+            loop='loop'
+            muted
+            defaultMuted
+            playsinline
+            oncontextmenu='return false;'
+            preload='auto'
+          >
+            <source src='/vid/vidIndex.mp4' type='video/mp4' />
+          </video>
+
+          <button
+            onClick={scrollToSeccion}
+            className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'
+          >
+            <div className='lbMax:hidden border-2 border-solid bg-white border-white mt-3 rounded-full w-12 h-12 cursor-pointer animate-bounce text-white'>
+              <img src={arrow} alt='arrow' className='h-12 relative z-10 text-white ' />
+            </div>
+          </button>
+        </div>
+      </div>
+      {/* ---------------------------------SERVICIOS-------------------------------------------- */}
+      <div ref={seccion} className='flex flex-col w-full p-8 mb:p-16 bg-slate-50 h-90'>
+        <h2 className='lb:text-3xl text-xl italic text-center mb-5'>Nuestro Enfoque y Servicios</h2>
+        <div className='flex items-center justify-around gap-4 flex-wrap w-full'>
+          <IndexCard
+            link='/services'
+            img={servicioTecnico}
+            title='Servicio Técnico'
+            text='Expertos en resolver problemas y mantener tus dispositivos en óptimas condiciones.'
+          />
+          <IndexCard
+            link='/about'
+            img={sobre}
+            title='Sobre Nosotros'
+            text='Conoce nuestra historia y los valores que nos impulsan en Rojo.'
+          />
+          <IndexCard
+            link='/contact'
+            img={contact}
+            title='Contáctanos'
+            text='¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.'
+          />
         </div>
         {/* -------------------------PORTADA------------------------------------------------- */}
         <div className='videoContainer w-full'>

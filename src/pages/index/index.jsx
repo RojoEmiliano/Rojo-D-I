@@ -1,18 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import React, { useRef } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
-
+import React, { useRef } from 'react';
 import arrow from '../../assets/img/down-arrow.png';
 import brother from '../../assets/img/brother.svg';
 import contact from '../../assets/img/booking.png';
 import epson from '../../assets/img/epson.jpg';
+import epsonsvg from '../../assets/img/epson.svg';
 import hp from '../../assets/img/hp.svg';
 import portadaepson from '../../assets/img/portadaepson.jpg';
 import portadaricoh from '../../assets/img/portadaricoh.jpg';
 import ricoh from '../../assets/img/ricoh.jpg';
+import ricohsvg from '../../assets/img/ricoh.svg';
 import samsung from '../../assets/img/samsung.svg';
 import servicioTecnico from '../../assets/img/customer-support.png';
 import sobre from '../../assets/img/people.png';
@@ -22,12 +23,12 @@ import HelmetCommon from '../../commons/HelmetCommon/HelmetCommon';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
 function Index() {
-  const seccion = useRef(null);
 
+  const seccion = useRef()
   const scrollToSeccion = () => {
     seccion.current.scrollIntoView({ behavior: 'smooth' });
   };
-
+  
   return (
     <>
       <HelmetCommon title='ROJO D-I' />

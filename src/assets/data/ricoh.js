@@ -5,6 +5,7 @@ const products = [
 
   {
     name: 'Ricoh SP 3710dn impresora láser blanco y negro',
+    model: 'SP3710dn',
     description: [
       'Extienda la productividad de impresión con un presupuesto limitado',
       'Producción de hasta 34 ppm, impresión',
@@ -52,6 +53,7 @@ const products = [
 
   {
     name: 'Ricoh P311 impresora láser blanco y negro',
+    model: 'P311',
     description: [
       'Mantener la productividad y el presupuesto',
       'Producción de hasta 34 ppm, impresión',
@@ -99,6 +101,7 @@ const products = [
 
   {
     name: 'Ricoh P502 impresora blanco y negro',
+    model: 'P502',
     description: [
       'Coloque la impresión rápida, confiable y económica dentro del alcance.',
       'Producción de hasta 45 ppm, impresión',
@@ -145,6 +148,7 @@ const products = [
 
   {
     name: 'Ricoh P800 impresora láser blanco y negro',
+    model: 'P800',
     description: [
       'Abraza el poder en un espacio más pequeño.',
       'Producción de hasta 57 ppm',
@@ -194,6 +198,7 @@ const products = [
 
   {
     name: 'Ricoh SP 3710SF impresora multifunción láser blanco y negro',
+    model: 'SP3710SF',
     description: [
       'Produzca un flujo de trabajo más inteligente y asequible',
       'Producción de hasta 34 ppm, impresión, copia, escaneo, envío de fax',
@@ -240,6 +245,7 @@ const products = [
 
   {
     name: 'Ricoh M320 impresora multifunción láser blanco y negro',
+    model: 'M320',
     description: [
       'Produzca un flujo de trabajo más inteligente y asequible',
       'Producción de hasta 34 ppm, impresión, copia, escaneo, envío de fax',
@@ -287,6 +293,7 @@ const products = [
 
   {
     name: 'M 400FW Impresora multifunción láser en blanco y negro',
+    model: 'M400FW',
     description: [
       'Solución B&N A4 productiva, conectable y segura para trabajar desde casa e híbrida',
       'Imprime hasta 40 ppm (A4)/42 ppm (Carta), copia, escanea, fax',
@@ -334,6 +341,7 @@ const products = [
 
   {
     name: 'Ricoh MP301 impresora multifunción láser blanco y negro',
+    model: 'MP301',
     description: [
       'Eleve sus expectativas — y mejore su productividad. El modelo RICOH® Aficio® MP 301SPF ofrece capacidades avanzadas para agilizar el flujo de trabajo y reducir el costo total de propiedad.',
       'Producción de hasta 31 ppm, impresión, copia, escaneo, envío de fax',
@@ -381,6 +389,7 @@ const products = [
 
   {
     name: 'Ricoh MP305 impresora multifunción láser blanco y negro',
+    model: 'MP305',
     description: [
       'Un MFP A4 compacto con posibilidad de funcionalidades en A3.',
       'Producción de hasta 30 ppm, impresión, copia, escaneo, envío de fax',
@@ -428,6 +437,7 @@ const products = [
 
   {
     name: 'Ricoh IM430 impresora multifunción láser blanco y negro',
+    model: 'IM430',
     description: [
       'Haga de la productividad el ajuste perfecto.',
       'Producción de hasta 45 ppm, impresión, copia, escaneo, envío de fax',
@@ -474,6 +484,7 @@ const products = [
 
   {
     name: 'Ricoh IM550 impresora multifunción láser blanco y negro',
+    model: 'IM550',
     description: [
       'Haga espacio para un rendimiento dinámico.',
       'Producción de hasta 57 ppm, impresión, copia, escaneo, envío de fax',
@@ -521,6 +532,7 @@ const products = [
 
   {
     name: 'Ricoh MP2352 impresora multifunción láser blanco y negro',
+    model: 'MP2352',
     description: [
       'Produzca un flujo de trabajo más inteligente y asequible.',
       'Producción de hasta 23 ppm, impresión, copia, escaneo, envío de fax',
@@ -566,6 +578,7 @@ const products = [
 
   {
     name: 'Ricoh MP3352 impresora multifunción láser blanco y negro',
+    model: 'MP3352',
     description: [
       'Produzca un flujo de trabajo más inteligente y asequible.',
       'Producción de hasta 33 ppm, impresión, copia, escaneo, envío de fax',
@@ -611,6 +624,7 @@ const products = [
 
   {
     name: 'Ricoh MP2555 impresora multifunción láser blanco y negro',
+    model: 'MP2555',
     description: [
       'Convierte el dia a dia en una jornada fácil.',
       'Producción de hasta 25 ppm, impresión, copia, escaneo, envío de fax',
@@ -655,6 +669,7 @@ const products = [
 
   {
     name: 'Ricoh MP2554 impresora multifunción láser blanco y negro',
+    model: 'MP2554',
     description: [
       'Amplíe su negocio con la comodidad diseñada a su medida.',
       'Producción de hasta 25 ppm, impresión, copia, escaneo, envío de fax',
@@ -705,6 +720,7 @@ const products = [
 
   {
     name: 'Ricoh MP C305 impresora multifunción láser color',
+    model: 'MPC305',
     description: [
       'Color atractivo y desempeño potente a su alcance.',
       'Producción de hasta 31 ppm, impresión, copia, escaneo, envío de fax',
@@ -747,6 +763,7 @@ const products = [
 
   {
     name: 'Ricoh MP C306 impresora multifunción láser color',
+    model: 'MPC306',
     description: [
       'Lleva un rendimiento multifunción colorido a tu escritorio.',
       'Producción de hasta 31 ppm, impresión, copia, escaneo, envío de fax',

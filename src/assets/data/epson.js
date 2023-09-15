@@ -3,6 +3,7 @@ import { productsTypes } from '../../utils/productsTypes';
 const products = [
   {
     name: 'Impresora Epson EcoTank M1180',
+    model: 'M1180',
     description: [
       'Compacta impresora monocromática diseñada para aumentar la productividad y reducir costos de su empresa',
       'Funciones: Imprime | Inalámbrica | Ethernet | PCL',
@@ -45,11 +46,13 @@ const products = [
       },
       modelCode: 'C11CG94303',
       dataSheet: '/epson/datasheets/dataSheet-M-1180.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-M/Epson-M1180/s/SPT_C11CG94301',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-M/Epson-M1180/s/SPT_C11CG94301',
     },
   },
   {
     name: 'Impresora Monocromática WorkForce Pro WF-M5299',
+    model: 'WF-M5299',
     description: [
       'La impresora monocromática más economica en su clase',
       'Funciones: Impresora Blanco y Negro con Wireless/Ethernet & PCL/PS',
@@ -93,11 +96,13 @@ const products = [
       },
       modelCode: 'C11CG07301',
       dataSheet: '/epson/datasheets/dataSheet-WF-M5299.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5299/s/SPT_C11CG07201',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5299/s/SPT_C11CG07201',
     },
   },
   {
     name: 'Impresora Epson WorkForce Pro WF-6090',
+    model: 'WF-6090',
     description: [
       'Impresora rápida y rentable para incrementar la productividad en grupos de trabajo',
       'Funciones: Impresora con Wireless/Ethernet & PCL/PS',
@@ -140,11 +145,13 @@ const products = [
       },
       modelCode: 'C11CD47201',
       dataSheet: '/epson/datasheets/dataSheet-WF-6090.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-6090/s/SPT_C11CD47201',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-6090/s/SPT_C11CD47201',
     },
   },
   {
     name: 'Impresora Epson WorkForce Pro WF-C5290',
+    model: 'WF-C5290',
     description: [
       'Impresora a color, compacta, de alta productividad y bajos costos operativos con soluciones de gestión empresariales',
       'Funciones: Impresora con Wireless/Ethernet & PCL/PS',
@@ -187,11 +194,13 @@ const products = [
       },
       modelCode: 'C11CG05301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C5290.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5290/s/SPT_C11CG05201?review-filter=Windows+10+64-bit',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-de-funci%C3%B3n-%C3%BAnica/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5290/s/SPT_C11CG05201?review-filter=Windows+10+64-bit',
     },
   },
   {
     name: 'Impresora Multifuncional Monocromática WorkForce Pro WF-M5799',
+    model: 'WF-M5799',
     description: [
       'La multifuncional monocromática más económica en su clase',
       'Funciones: Impresora blanco y negro con Wireless/Ethernet & PCL/PS',
@@ -248,11 +257,13 @@ const products = [
       },
       modelCode: 'C11CG04301',
       dataSheet: '/epson/datasheets/dataSheet-WF-M5799.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5799/s/SPT_C11CG04201',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-M5799/s/SPT_C11CG04201',
     },
   },
   {
     name: 'Impresora Multifuncional Inalámbrica EcoTank L6490',
+    model: 'L6490',
     description: [
       'Multifuncional A4 perfecta para el ambiente de Home Office y grupos de trabajo pequeños',
       'Impresiones rápidas',
@@ -305,11 +316,13 @@ const products = [
       },
       modelCode: 'C11CJ88303',
       dataSheet: '/epson/datasheets/dataSheet-L-6490.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L6490/s/SPT_C11CJ88301',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L6490/s/SPT_C11CJ88301',
     },
   },
   {
     name: 'Impresora Multifuncional Epson WorkForce Pro WF-6590',
+    model: 'WF-6590',
     description: [
       'Impresora multifuncional rápida y rentable para optimizar la productividad en grupos de trabajo',
       'Funciones: Impresora 4-en-1, con Wireless/Ethernet & PCL/PS: Imprime / Copia / Escanea / Fax',
@@ -366,11 +379,13 @@ const products = [
       },
       modelCode: 'C11CD49201',
       dataSheet: '/epson/datasheets/dataSheet-WF-6590.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-6590/s/SPT_C11CD49201?review-filter=Windows+7+64-bit',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-6590/s/SPT_C11CD49201?review-filter=Windows+7+64-bit',
     },
   },
   {
     name: 'Impresora Multifuncional WorkForce Pro WF-C5790',
+    model: 'WF-C5790',
     description: [
       'Impresora multifuncional a color, compacta, de alta productividad y bajos costos operativos con soluciones de gestión empresariales',
       'Funciones: Impresora 4-en-1, con Wireless/Ethernet & PCL/PS: Imprime / Copia / Escanea / Fax',
@@ -426,11 +441,13 @@ const products = [
       },
       modelCode: 'C11CG02301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C5790.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5790/s/SPT_C11CG02201?review-filter=Windows+8+32-bit',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C5790/s/SPT_C11CG02201?review-filter=Windows+8+32-bit',
     },
   },
   {
     name: 'Impresora Multifuncional EcoTank L15150',
+    model: 'L15150',
     description: [
       'Multifuncional A3 a color con diseño compacto para impresiones a bajo costo',
       'Funciones: Impresora 4-en-1, con Wireless/Ethernet & PCL/PS: Imprime / Copia / Escanea / Fax',
@@ -485,11 +502,13 @@ const products = [
       },
       modelCode: 'C11CH72303',
       dataSheet: '/epson/datasheets/dataSheet-L-15150.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L15150/s/SPT_C11CH72301?review-filter=Windows+7+32-bit',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-L/Epson-L15150/s/SPT_C11CH72301?review-filter=Windows+7+32-bit',
     },
   },
   {
     name: 'Impresora Multifuncional Departamental WorkForce Pro WF-C878R',
+    model: 'WF-C878R',
     description: [
       'Multifuncional a color de bajo costo diseñada para equipos de trabajo',
       'Funciones: Impresora 4-en-1, con Wireless/Ethernet & PCL/PS: Imprime / Copia / Escanea / Fax',
@@ -544,7 +563,8 @@ const products = [
       },
       modelCode: 'C11CH60301',
       dataSheet: '/epson/datasheets/dataSheet-WF-C878R.pdf',
-      drivers: 'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C878R/s/SPT_C11CH60201',
+      drivers:
+        'https://epson.com.ar/Soporte/Impresoras/Impresoras-multifuncionales/Epson-WorkForce/Epson-WorkForce-Pro-WF-C878R/s/SPT_C11CH60201',
     },
   },
 ];

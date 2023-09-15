@@ -23,12 +23,11 @@ import HelmetCommon from '../../commons/HelmetCommon/HelmetCommon';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
 function Index() {
-
-  const seccion = useRef()
+  const seccion = useRef();
   const scrollToSeccion = () => {
     seccion.current.scrollIntoView({ behavior: 'smooth' });
   };
-  
+
   return (
     <>
       <HelmetCommon title='ROJO D-I' />
@@ -41,18 +40,20 @@ function Index() {
         {/* -------------------------PORTADA------------------------------------------------- */}
         <div className='videoContainer w-full'>
           <div className='w-full h-full relative'>
-            <video
-              className='video w-full'
-              autoplay='autoplay'
-              loop='loop'
-              muted
-              defaultMuted
-              playsinline
-              oncontextmenu='return false;'
-              preload='auto'
-            >
-              <source src='/vid/vidIndex.mp4' type='video/mp4' />
-            </video>
+            {useMediaQuery(1024) ? (
+              <img className='video w-full' src='/vid/gifIndex.gif'></img>
+            ) : (
+              <video
+                className='video w-full'
+                autoPlay='autoplay'
+                loop='loop'
+                muted
+                playsInline
+                preload='auto'
+              >
+                <source src='/vid/vidIndex.mp4' type='video/mp4' />
+              </video>
+            )}
             <button
               onClick={scrollToSeccion}
               className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'

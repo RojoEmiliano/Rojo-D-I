@@ -48,6 +48,7 @@ function Index() {
           >
             <source src='/vid/vidIndex.mp4' type='video/mp4' />
           </video>
+
           <button
             onClick={scrollToSeccion}
             className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'

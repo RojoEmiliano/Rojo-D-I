@@ -2,19 +2,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Carousel from 'react-bootstrap/Carousel';
-import { Link } from 'react-router-dom';
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
+
 import arrow from '../../assets/img/down-arrow.png';
 import brother from '../../assets/img/brother.svg';
 import contact from '../../assets/img/booking.png';
 import epson from '../../assets/img/epson.jpg';
-import epsonsvg from '../../assets/img/epson.svg';
 import hp from '../../assets/img/hp.svg';
 import portadaepson from '../../assets/img/portadaepson.jpg';
 import portadaricoh from '../../assets/img/portadaricoh.jpg';
 import ricoh from '../../assets/img/ricoh.jpg';
-import ricohsvg from '../../assets/img/ricoh.svg';
 import samsung from '../../assets/img/samsung.svg';
 import servicioTecnico from '../../assets/img/customer-support.png';
 import sobre from '../../assets/img/people.png';
@@ -22,10 +20,12 @@ import wsp from '../../assets/img/whatsapp.png';
 import IndexCard from '../../components/IndexCard/IndexCard';
 
 function Index() {
-  const seccion = useRef()
+  const seccion = useRef();
+
   const scrollToSeccion = () => {
-    seccion.current.scrollIntoView({ behavior: "smooth" })
-  }
+    seccion.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className='flex flex-col w-full h-full'>
       <div className='fixed icono right-4 bottom-2 icon z-40 w-[7vh]'>
@@ -36,9 +36,19 @@ function Index() {
       {/* -------------------------PORTADA------------------------------------------------- */}
       <div className='videoContainer w-full'>
         <div className='w-full h-full relative'>
-        <video className='video w-full' autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-        <source src="/vid/vidIndex.mp4" type="video/mp4"/>
-        </video>
+          <video
+            className='video w-full'
+            autoplay='autoplay'
+            loop='loop'
+            muted
+            defaultMuted
+            playsinline
+            oncontextmenu='return false;'
+            preload='auto'
+          >
+            <source src='/vid/vidIndex.mp4' type='video/mp4' />
+          </video>
+
           <button
             onClick={scrollToSeccion}
             className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'
@@ -91,8 +101,8 @@ function Index() {
               Con décadas de experiencia, Epson se ha destacado por ofrecer soluciones de impresión
               de alta calidad para hogares y empresas.
             </p>
-            <Link to='/epson'>
-              <button className='buttonEpson'>VER PRODUCTOS</button>
+            <Link to='/epson' className='buttonEpson'>
+              VER PRODUCTOS
             </Link>
           </div>
         </div>
@@ -115,8 +125,8 @@ function Index() {
               amplia gama de impresoras y tintas diseñadas para satisfacer las necesidades tanto de
               empresas como de usuarios individuales.
             </p>
-            <Link to='/ricoh'>
-              <button className='buttonRicoh'>VER PRODUCTOS</button>
+            <Link to='/ricoh' className='buttonRicoh'>
+              VER PRODUCTOS
             </Link>
           </div>
         </div>

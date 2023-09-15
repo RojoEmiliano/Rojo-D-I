@@ -35,9 +35,19 @@ function Index() {
       {/* -------------------------PORTADA------------------------------------------------- */}
       <div className='videoContainer w-full'>
         <div className='w-full h-full relative'>
-        <video className='video w-full' autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-        <source src="/vid/vidIndex.mp4" type="video/mp4"/>
-        </video>
+          <video
+            className='video w-full'
+            autoplay='autoplay'
+            loop='loop'
+            muted
+            defaultMuted
+            playsinline
+            oncontextmenu='return false;'
+            preload='auto'
+          >
+            <source src='/vid/vidIndex.mp4' type='video/mp4' />
+          </video>
+
           <button
             onClick={scrollToSeccion}
             className='absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white'

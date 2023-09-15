@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 
 import './App.css';
 
@@ -13,6 +13,7 @@ import About from './pages/About/About';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Contact from './pages/Contact/Contact';
 import { Services } from './pages/Services/Services';
+import Redirect from './components/Redirect/Redirect';
 
 function App() {
   return (
@@ -68,11 +69,11 @@ function App() {
               </ScrollToTop>
             }
           />
-                    <Route
+          <Route
             path='/services'
             element={
               <ScrollToTop>
-                <Services/>
+                <Services />
               </ScrollToTop>
             }
           />
@@ -84,6 +85,7 @@ function App() {
               </ScrollToTop>
             }
           />
+          <Route path='*' element={<Redirect />} />
         </Routes>
         <Footer />
       </div>

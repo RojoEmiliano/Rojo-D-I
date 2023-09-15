@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import React, { useRef } from 'react';

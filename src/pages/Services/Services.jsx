@@ -1,6 +1,9 @@
-import React from 'react';
 import './Services.scss';
+
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaTools, FaWpforms, FaWhatsapp } from 'react-icons/fa';
+
 import brother from '../../assets/img/brother.svg';
 import epson from '../../assets/img/epson.svg';
 import hp from '../../assets/img/hp.svg';
@@ -41,13 +44,13 @@ export const Services = () => {
           <h2 className='text-lg font-semibold'> Solicita tu servicio vía: </h2>
         </div>
         <div className='flex justify-center p-2 pb-4'>
-          <a
+          <Link
             className='flex items-center justify-center bg-ricoh hover:bg-ricohHover px-4 py-2 m-2 text-white rounded-lg focus:outline-none transition-colors '
-            href='./contact'
+            to='/contact'
           >
             Formulario
             <FaWpforms className='ml-1' />
-          </a>
+          </Link>
           <a
             className='flex items-center justify-center bg-ricoh hover:bg-ricohHover px-4 py-2 m-2 text-white rounded-lg focus:outline-none transition-colors '
             href='https://wa.link/xj5bzq'

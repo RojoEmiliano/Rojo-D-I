@@ -8,6 +8,10 @@ export default {
 				ricohHover: "#c53e44",
 				epson: "#039",
 				epsonHover: "#1a47a3",
+				adminBg: "#0f1113",
+				adminBgElevated: "#17191c",
+				adminAccent: "#bf292f",
+				adminAccentHover: "#d63b41",
 			},
 			screens: {
 				'sb': '525px',

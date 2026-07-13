@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';

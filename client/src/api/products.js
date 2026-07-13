@@ -1,8 +1,9 @@
 const API_URL = import.meta.env.VITE_API_URL;
 
 export async function fetchProducts(brand, { signal } = {}) {
-  const res = await fetch(`${API_URL}/api/products?brand=${brand}`, { signal });
-  if (!res.ok) throw new Error(`Failed to fetch ${brand} products`);
+  const qs = brand ? `?brand=${brand}` : '';
+  const res = await fetch(`${API_URL}/api/products${qs}`, { signal });
+  if (!res.ok) throw new Error(`Failed to fetch ${brand ?? ''} products`);
   return res.json();
 }
 

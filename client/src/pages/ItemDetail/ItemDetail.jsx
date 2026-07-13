@@ -8,7 +8,6 @@ import {
   faScrewdriverWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import Accordion from 'react-bootstrap/Accordion';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { fetchProductByModelCode } from '../../api/products';
 import SliderComponent from '../../components/Slider/Slider';

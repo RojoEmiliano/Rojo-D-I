@@ -19,6 +19,9 @@ dist-ssr
 server/.env
 client/.env
 
+# Uploaded files
+server/uploads
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

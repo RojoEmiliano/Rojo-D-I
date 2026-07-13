@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: rojo-di-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: rojo
+      POSTGRES_PASSWORD: rojo_dev_password
+      POSTGRES_DB: rojo_di
+    ports:
+      - "5432:5432"
+    volumes:
+      - rojo_di_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rojo -d rojo_di"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  rojo_di_pgdata:

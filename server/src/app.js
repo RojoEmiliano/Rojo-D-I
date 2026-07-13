@@ -1,0 +1,13 @@
+import express from "express";
+import cors from "cors";
+import productsRouter from "./routes/products.js";
+import authRouter from "./routes/auth.js";
+
+export const app = express();
+
+app.use(cors({ origin: process.env.CLIENT_ORIGIN }));
+app.use(express.json());
+
+app.get("/api/health", (req, res) => res.json({ ok: true }));
+app.use("/api/products", productsRouter);
+app.use("/api/auth", authRouter);

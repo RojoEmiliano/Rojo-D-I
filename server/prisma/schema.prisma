@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Brand {
+  epson
+  ricoh
+}
+
+enum ProductType {
+  iByN
+  iColor
+  mByN
+  mColor
+}
+
+model Product {
+  id          String      @id @default(cuid())
+  brand       Brand
+  name        String
+  model       String
+  modelCode   String      @unique
+  type        ProductType
+  description String[]
+  imgs        String[]
+  specs       Json
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([brand])
+  @@index([type])
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

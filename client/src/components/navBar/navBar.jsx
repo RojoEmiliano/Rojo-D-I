@@ -79,7 +79,7 @@ const NavBar = () => {
           <div className='h-[117px] w-full'></div>
           <nav
             className={`flex justify-between items-center py-0 px-2.5 shadow-z fixed top-0 z-50 w-full 
-            bg-white ${scrolledDown ? 'shrunk' : ''} navbar`}
+            bg-white ${scrolledDown ? 'shrunk' : ''} siteNavbar`}
           >
             <Link to='/'>
               <img className='w-[250px] lg:ml-2' src={logo} />

@@ -4,20 +4,30 @@ const BASE_URL = process.env.NAJHA_URL;
 const BRANDS = ["BRO", "EPS", "RIC"];
 const BRAND_LABELS = { BRO: "Brother", EPS: "Epson", RIC: "Ricoh" };
 const BATCH_SIZE = 8; // páginas en paralelo
+const FETCH_TIMEOUT_MS = 15000;
 
 let cache = { data: null, loadedAt: null };
 let loadingPromise = null;
 
-// ── Fetch con encoding ISO-8859-1 ─────────────────────────────────────────────
+// ── Fetch con encoding ISO-8859-1 y timeout ───────────────────────────────────
+// Sin timeout, una sola página que el sitio tarde/no responda cuelga
+// scrapeAll() para siempre (Promise.all del lote nunca resuelve).
 async function fetchHtml(url, cookie) {
-  const res = await fetch(url, {
-    headers: {
-      cookie: `PHPSESSID=${cookie}`,
-      "User-Agent": "Mozilla/5.0",
-    },
-  });
-  const buffer = await res.arrayBuffer();
-  return new TextDecoder("iso-8859-1").decode(buffer);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      headers: {
+        cookie: `PHPSESSID=${cookie}`,
+        "User-Agent": "Mozilla/5.0",
+      },
+      signal: controller.signal,
+    });
+    const buffer = await res.arrayBuffer();
+    return new TextDecoder("iso-8859-1").decode(buffer);
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 // ── Login → devuelve PHPSESSID ────────────────────────────────────────────────
@@ -27,11 +37,19 @@ async function login() {
     pass: process.env.NAJHA_PASS,
   });
 
-  const res = await fetch(`${BASE_URL}/login.php`, {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: body.toString(),
-  });
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  let res;
+  try {
+    res = await fetch(`${BASE_URL}/login.php`, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: body.toString(),
+      signal: controller.signal,
+    });
+  } finally {
+    clearTimeout(timer);
+  }
 
   const text = await res.text();
   if (!text.trim().startsWith("OK")) throw new Error("Login Najha fallido");

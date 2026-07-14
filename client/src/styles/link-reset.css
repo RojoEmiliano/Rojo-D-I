@@ -1,0 +1,11 @@
+/* Bootstrap y Tailwind resetean el elemento <a> con la misma especificidad
+   (selector de un solo elemento). Bootstrap necesita cargar después de
+   Tailwind para que `.btn-primary` le gane a `[type='submit']`, pero eso
+   deja el color/subrayado azul de Bootstrap ganándole al `color: inherit`
+   de Tailwind en cualquier link sin color propio explícito. Esta regla
+   carga última en el bundle para recuperar ese comportamiento, sin afectar
+   clases más específicas (.current, .text, utilities de Tailwind, etc). */
+a {
+  color: inherit;
+  text-decoration: none;
+}

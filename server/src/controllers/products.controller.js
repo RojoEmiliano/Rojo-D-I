@@ -4,7 +4,23 @@ export async function listProducts(req, res) {
   const { brand } = req.query;
 
   const products = await prisma.product.findMany({
-    where: brand ? { brand } : undefined,
+    where: { deletedAt: null, ...(brand ? { brand } : {}) },
+    orderBy: { name: "asc" },
+  });
+
+  res.json(products);
+}
+
+// Solo para el admin autenticado — a diferencia de listProducts (pública),
+// permite ver productos inactivos (soft-deleted) para poder restaurarlos.
+export async function listProductsAdmin(req, res) {
+  const { brand, status = "active" } = req.query;
+
+  const deletedFilter =
+    status === "inactive" ? { deletedAt: { not: null } } : status === "all" ? {} : { deletedAt: null };
+
+  const products = await prisma.product.findMany({
+    where: { ...deletedFilter, ...(brand ? { brand } : {}) },
     orderBy: { name: "asc" },
   });
 
@@ -14,7 +30,7 @@ export async function listProducts(req, res) {
 export async function getProductByModelCode(req, res) {
   const { modelCode } = req.params;
 
-  const product = await prisma.product.findUnique({ where: { modelCode } });
+  const product = await prisma.product.findFirst({ where: { modelCode, deletedAt: null } });
 
   if (!product) {
     return res.status(404).json({ error: "Product not found" });
@@ -83,7 +99,7 @@ export async function createProduct(req, res) {
 export async function updateProduct(req, res) {
   try {
     const { modelCode } = req.params;
-    const existing = await prisma.product.findUnique({ where: { modelCode } });
+    const existing = await prisma.product.findFirst({ where: { modelCode, deletedAt: null } });
     if (!existing) return res.status(404).json({ error: "Product not found" });
 
     const { brand, name, model, type } = req.body;
@@ -129,10 +145,18 @@ export async function updateProduct(req, res) {
 
 export async function deleteProduct(req, res) {
   const { modelCode } = req.params;
-  try {
-    await prisma.product.delete({ where: { modelCode } });
-    res.status(204).end();
-  } catch {
-    res.status(404).json({ error: "Product not found" });
-  }
+  const existing = await prisma.product.findFirst({ where: { modelCode, deletedAt: null } });
+  if (!existing) return res.status(404).json({ error: "Product not found" });
+
+  await prisma.product.update({ where: { modelCode }, data: { deletedAt: new Date() } });
+  res.status(204).end();
+}
+
+export async function restoreProduct(req, res) {
+  const { modelCode } = req.params;
+  const existing = await prisma.product.findFirst({ where: { modelCode, deletedAt: { not: null } } });
+  if (!existing) return res.status(404).json({ error: "Inactive product not found" });
+
+  const product = await prisma.product.update({ where: { modelCode }, data: { deletedAt: null } });
+  res.json(product);
 }

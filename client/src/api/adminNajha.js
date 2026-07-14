@@ -1,8 +1,10 @@
+import { fetchWithTimeout } from './fetchWithTimeout';
+
 const API_URL = import.meta.env.VITE_API_URL;
 
 export async function getNajha(query, token) {
   const qs = query ? `?q=${encodeURIComponent(query)}` : '';
-  const res = await fetch(`${API_URL}/api/najha${qs}`, {
+  const res = await fetchWithTimeout(`${API_URL}/api/najha${qs}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   if (!res.ok) throw new Error('Error al obtener el catálogo de Najha');
@@ -10,7 +12,7 @@ export async function getNajha(query, token) {
 }
 
 export async function refreshNajha(token) {
-  const res = await fetch(`${API_URL}/api/najha/refresh`, {
+  const res = await fetchWithTimeout(`${API_URL}/api/najha/refresh`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${token}` },
   });

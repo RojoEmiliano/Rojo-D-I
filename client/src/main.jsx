@@ -6,6 +6,10 @@ import './index.css'
 // especificidad (ej. `[type='submit']` de Tailwind vs `.btn-primary` de
 // Bootstrap) gana el que carga último en la cascada.
 import 'bootstrap/dist/css/bootstrap.min.css'
+// Debe ir después de Bootstrap: le devuelve a los <a> sin color propio el
+// comportamiento original (heredar color, sin subrayado). Ver comentario
+// en el archivo.
+import './styles/link-reset.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -31,3 +31,11 @@ export function updateProduct(modelCode, formData, token) {
 export function deleteProduct(modelCode, token) {
   return authFetch(`/api/products/${modelCode}`, token, { method: 'DELETE' });
 }
+
+export function restoreProduct(modelCode, token) {
+  return authFetch(`/api/products/${modelCode}/restore`, token, { method: 'POST' });
+}
+
+export function listAdminProducts(status, token) {
+  return authFetch(`/api/products/admin?status=${status}`, token);
+}
